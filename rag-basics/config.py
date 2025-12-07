@@ -19,8 +19,8 @@ class Config:
     WEAVIATE_GRPC_URL = os.getenv("WEAVIATE_GRPC_URL", "localhost:50051")
     
     # Model Configuration
-    EMBEDDING_MODEL = os. getenv("EMBEDDING_MODEL", "claude-3-5-sonnet-20241022")
-    CHAT_MODEL = os.getenv("CHAT_MODEL", "claude-3-5-sonnet-20241022")
+    EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "claude-haiku-4-5")
+    CHAT_MODEL = os.getenv("CHAT_MODEL", "claude-haiku-4-5")
     
     # RAG Configuration
     CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "1000"))

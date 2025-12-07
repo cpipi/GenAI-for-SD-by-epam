@@ -7,24 +7,29 @@ import os
 import time
 from pathlib import Path
 from typing import List, Dict
-import anthropic
 import weaviate
 import weaviate.classes as wvc
 from weaviate.util import generate_uuid5
 from tqdm import tqdm
 from config import Config
+from embeddings import EmbeddingModel
 
 
 class DataIngestion:
     """Handle data loading, embedding, and ingestion to Weaviate."""
-    
+  
     def __init__(self):
         """Initialize clients and configuration."""
         self.config = Config()
-        self.anthropic_client = anthropic.Anthropic(api_key=Config.ANTHROPIC_API_KEY)
+        
+        # Load local embedding model
+        print("📥 Loading local embedding model...")
+        self.embedding_model = EmbeddingModel()
+        print("   ✅ Model loaded successfully")
+        
         self.weaviate_client = None
         self.collection = None
-        
+
     def connect_to_weaviate(self):
         """Connect to Weaviate instance."""
         print("🔗 Connecting to Weaviate...")
@@ -83,7 +88,6 @@ class DataIngestion:
                     description="Full text content of the report"
                 ),
             ],
-            # Configure vector index
             vectorizer_config=wvc.config.Configure.Vectorizer.none(),
             vector_index_config=wvc.config.Configure.VectorIndex.hnsw(
                 distance_metric=wvc.config.VectorDistances.COSINE
@@ -112,56 +116,36 @@ class DataIngestion:
         
         print(f"   ✅ Total reports loaded: {len(all_reports)}")
         return all_reports
-    
+
     def create_embeddings(self, texts: List[str]) -> List[List[float]]:
-        """
-        Create embeddings using Anthropic API.
-        Note: We'll use Claude's built-in message handling for embeddings simulation.
-        In production, you'd use a dedicated embedding model.
-        """
-        print(f"\n🔢 Creating embeddings for {len(texts)} documents...")
+        """Create embeddings using shared EmbeddingModel."""
+        print(f"\n🔢 Creating embeddings for {len(texts)} documents using local model...")
         embeddings = []
+        batch_size = 32
         
-        # For this demo, we'll create simple embeddings
-        # In production, use proper embedding models
-        for text in tqdm(texts, desc="Generating embeddings"):
-            # Simple hash-based embedding for demonstration
-            # Replace with actual embedding API call
-            embedding = self._simple_embedding(text)
-            embeddings.append(embedding)
-            time.sleep(0.1)  # Rate limiting
+        for i in tqdm(range(0, len(texts), batch_size), desc="Generating embeddings"):
+            batch = texts[i:i+batch_size]
+            try:
+                # Use the shared embedding model
+                batch_embeddings = self.embedding_model.encode(batch)
+                
+                # batch_embeddings should already be a list of lists
+                # Just ensure it's the right format
+                if len(batch) == 1 and isinstance(batch_embeddings[0], float):
+                    # Single text returned as single vector
+                    embeddings.append(batch_embeddings)
+                else:
+                    # Multiple texts returned as list of vectors
+                    embeddings.extend(batch_embeddings)
+                    
+            except Exception as e:
+                print(f"❌ Embedding error: {e}")
+                # Fallback to zero vectors if embedding fails
+                emb_dim = self.embedding_model.dimension
+                embeddings.extend([[0.0]*emb_dim]*len(batch))
         
         print(f"   ✅ Created {len(embeddings)} embeddings")
         return embeddings
-    
-    def _simple_embedding(self, text: str, dim: int = 1024) -> List[float]:
-        """
-        Create a simple deterministic embedding from text.
-        This is for demonstration only - replace with real embeddings.
-        """
-        import hashlib
-        import struct
-        
-        # Create hash of text
-        hash_obj = hashlib.sha256(text.encode())
-        hash_bytes = hash_obj.digest()
-        
-        # Convert to float vector
-        embedding = []
-        for i in range(0, min(len(hash_bytes), dim // 8), 4):
-            value = struct.unpack('f', hash_bytes[i:i+4])[0] if i+4 <= len(hash_bytes) else 0.0
-            embedding.append(float(value))
-        
-        # Pad to correct dimension
-        while len(embedding) < dim:
-            embedding.append(0.0)
-        
-        # Normalize
-        magnitude = sum(x**2 for x in embedding) ** 0.5
-        if magnitude > 0:
-            embedding = [x / magnitude for x in embedding]
-        
-        return embedding[:dim]
     
     def ingest_documents(self, reports: List[Dict]):
         """Ingest documents with embeddings into Weaviate."""

@@ -26,10 +26,13 @@ st.markdown("""
         margin-bottom: 2rem;
     }
     .metric-card {
-        background-color: #f0f2f6;
+        background-color: #f0f2f6 !important;   /* Soft gray background */
+        color: #222 !important;                 /* Dark font color */
         padding: 1rem;
         border-radius: 0.5rem;
         margin: 0.5rem 0;
+        font-size: 1.15rem;
+        font-weight: 400;
     }
     .source-doc {
         background-color: #e8f4f8;
@@ -37,6 +40,7 @@ st.markdown("""
         border-radius: 0.5rem;
         margin: 0.5rem 0;
         border-left: 4px solid #1f77b4;
+        color: #222 !important;
     }
 </style>
 """, unsafe_allow_html=True)

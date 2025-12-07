@@ -1,6 +1,9 @@
 ## task: 
 project description (main idea, concepts, design details, dataset concept, system technical details, requirements, and limitations)
 
+## link to the video presentation:
+https://epam-my.sharepoint.com/:v:/p/anuar_sultan/IQDJFvtorNVcT7_rAD-0gkgwAa2g_LVFcDJuNnqhYtY-zJY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=EEmmBe
+
 # RAG-based Financial Reports Analysis System for Kazakhstani Banks
 
 ## Main Idea
@@ -81,15 +84,15 @@ Each document is annotated with:
 
 - **Database**: Weaviate (via Docker)
 - **Collection**: FinancialReports
-- **Vector Dimensions**: 1024 (Anthropic embeddings)
+- **Vector Dimensions**: 384 (Sentence Transformer embeddings)
 - **Distance Metric**: Cosine similarity
 - **Index Type**: HNSW (Hierarchical Navigable Small World)
 
 ### Embedding Strategy
 
-- **Model**: Anthropic Voyage (via Claude API)
+- **Model**: Sentence Transformer (all-MiniLM-L6-v2)
 - **Chunking**: By report section (financial/operational/market)
-- **Vector Size**: 1024 dimensions
+- **Vector Size**: 384 dimensions
 - **Batch Size**: 10 documents per API call
 
 ### RAG Pipeline
