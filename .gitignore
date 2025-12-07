@@ -1,0 +1,10 @@
+neuro-network-python-main/com/techorda/neuro/demo/service/max_finder_demo.py
+neuro-network-python-main/NEURON_NETWORK_README.md
+neuro-network-python-main/com/techorda/neuro/demo/service/__pycache__/neuron_layer.cpython-312.pyc
+neuro-network-python-main/com/techorda/neuro/demo/service/__pycache__/neuron_network.cpython-312.pyc
+neuro-network-python-main/com/techorda/neuro/demo/service/neuron/__pycache__/__init__.cpython-312.pyc
+neuro-network-python-main/com/techorda/neuro/demo/service/neuron/__pycache__/linear_neuron.cpython-312.pyc
+neuro-network-python-main/com/techorda/neuro/demo/service/neuron/__pycache__/neuron.cpython-312.pyc
+neuro-network-python-main/com/techorda/neuro/demo/service/neuron/__pycache__/tanh_neuron.cpython-312.pyc
+neuro-network-python-main/com/techorda/neuro/demo/service/tests/__pycache__/__init__.cpython-312.pyc
+neuro-network-python-main/com/techorda/neuro/demo/service/tests/__pycache__/test_neuron_network.cpython-312.pyc
