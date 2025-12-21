@@ -1,0 +1,428 @@
+{
+  "timestamp": "2025-12-22 01:12:57",
+  "total_queries": 15,
+  "successful_queries": 15,
+  "failed_queries": 0,
+  "metrics": {
+    "answer_relevancy": {
+      "mean": 99.86666666666666,
+      "median": 100,
+      "min": 98,
+      "max": 100
+    },
+    "context_precision": {
+      "mean": 0.3466666666666667,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.8
+    },
+    "context_recall": {
+      "mean": 1.0
+    },
+    "processing_time": {
+      "mean": 2.6477909247080484,
+      "median": 1.4976770877838135,
+      "min": 0.9644193649291992,
+      "max": 17.89469003677368
+    },
+    "by_query_type": {
+      "fact_lookup": {
+        "count": 15,
+        "avg_answer_relevancy": 99.86666666666666,
+        "avg_context_precision": 0.3466666666666667
+      }
+    }
+  },
+  "results": [
+    {
+      "query_id": 1,
+      "query": "What was Kaspi Bank's net profit in Q3 2024?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 2.376925230026245,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The ACTUAL ANSWER provides the exact figure (220.03 billion KZT) that matches the EXPECTED ANSWER, demonstrating perfect accuracy for the core factual claim. The answer is complete as it directly addresses the specific question asked about Q3 2024 net profit with no missing information. The response is entirely relevant, staying focused on the queried metric without extraneous details. The answer includes a source citation, which adds credibility. However, the response is minimal and could have been enhanced with additional context (e.g., year-over-year comparison, breakdown of profit drivers, or performance commentary), though such additions were not required to answer the specific question asked. The answer successfully fulfills all three evaluation criteria at maximum levels for a straightforward factual query."
+      },
+      "context_precision": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.37500000000000006,
+        "relevant_docs": 3,
+        "total_docs": 15,
+        "reasoning": "3/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "Based on the provided documents, **Kaspi Bank's net profit in Q3 2024 was 220.03 billion KZT**.\n\n**Source:** Kaspi Bank - Q3 2024 Financial Statement",
+      "expected_answer": "220.03 billion KZT"
+    },
+    {
+      "query_id": 2,
+      "query": "What is Halyk Bank's capital adequacy ratio in Q4 2024?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 1.4976770877838135,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The actual answer correctly identifies Halyk Bank's Capital Adequacy Ratio in Q4 2024 as 17.07%, matching the expected answer exactly. The response demonstrates high accuracy by providing the precise figure requested. Completeness is fully satisfied as the core question is directly answered with the specific metric for the specified period. Relevance is excellent as every element of the response focuses on the queried information without extraneous details. The answer goes beyond the minimum requirement by providing valuable context (Basel III comparison, Tier 1 Capital Ratio, regulatory buffer information) that enhances understanding without detracting from the primary answer. The source attribution adds credibility. No factual errors, omissions, or off-topic content are present."
+      },
+      "context_precision": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.37500000000000006,
+        "relevant_docs": 3,
+        "total_docs": 15,
+        "reasoning": "3/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "Based on the provided documents, **Halyk Bank's Capital Adequacy Ratio in Q4 2024 is 17.07%**.\n\n**Source:** Halyk Bank - Q4 2024 Financial Statement\n\n**Additional Context:**\n- This ratio exceeds the Basel III regulatory requirement of 12.5%\n- Halyk Bank's Tier 1 Capital Ratio in Q4 2024 is 14.46%\n- The bank maintains a strong capital buffer above minimum regulatory requirements",
+      "expected_answer": "17.07%"
+    },
+    {
+      "query_id": 3,
+      "query": "How many branches does ForteBank operate?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 2.611708402633667,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 28,
+        "total": 98,
+        "reasoning": "The actual answer demonstrates strong performance across all criteria. For accuracy (40/40): The Q4 2024 figure of 146 branches matches the expected answer exactly, and the quarterly breakdown (147, 144, 145, 146) appears internally consistent and plausible. For completeness (30/30): The answer goes beyond the basic query by providing temporal context across all four quarters of 2024, offering a comprehensive view of branch network trends rather than just a single data point. For relevance (28/30): The response is highly focused on the query with a clear summary statement. The minor deduction reflects that while the answer provides valuable context, the query itself was straightforward and could have been answered more concisely with just '146 branches' before the detailed breakdown. The tabular format enhances clarity and the summary effectively synthesizes the data. Overall, this is a high-quality response that provides the correct current answer while adding substantial value through historical quarterly context."
+      },
+      "context_precision": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 1.2631578947368423,
+        "relevant_docs": 12,
+        "total_docs": 15,
+        "reasoning": "12/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "# ForteBank Branch Network\n\nBased on the provided documents, ForteBank operates the following number of branches across different quarters in 2024:\n\n| Quarter | Number of Branches | Source |\n|---------|-------------------|--------|\n| Q1 2024 | 147 locations | Operational Metrics |\n| Q2 2024 | 144 locations | Operational Metrics |\n| Q3 2024 | 145 locations | Operational Metrics |\n| Q4 2024 | 146 locations | Operational Metrics |\n\n**Summary:** ForteBank operates approximately **145-147 branches** nationwide throughout 2024, maintaining a relatively stable branch network with slight variations across quarters.",
+      "expected_answer": "146 branches"
+    },
+    {
+      "query_id": 4,
+      "query": "What was Halyk Bank's ROE in Q1 2024?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 0.9644193649291992,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The ACTUAL ANSWER provides the exact figure (11.76%) that matches the EXPECTED ANSWER, demonstrating perfect accuracy for the core factual claim. The answer directly addresses the specific query about Halyk Bank's Q1 2024 ROE with no numerical errors or contradictions. The response is complete as it fully answers the straightforward question asked, and it is entirely relevant with no extraneous or off-topic information. The answer includes a source citation (Halyk Bank Q1 2024 Financial Statement), which adds credibility. While the answer could theoretically be enhanced with additional context (such as comparison to prior periods, industry benchmarks, or calculation methodology), such elaboration is not required to answer the specific question posed. The answer meets all criteria at maximum levels for a direct factual lookup query."
+      },
+      "context_precision": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.37500000000000006,
+        "relevant_docs": 3,
+        "total_docs": 15,
+        "reasoning": "3/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "Based on the provided documents, **Halyk Bank's Return on Equity (ROE) in Q1 2024 was 11.76%**.\n\n**Source:** Halyk Bank - Q1 2024 Financial Statement",
+      "expected_answer": "11.76%"
+    },
+    {
+      "query_id": 5,
+      "query": "What is Kaspi Bank's total assets in Q2 2024?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 1.0956330299377441,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The answer provides the exact figure requested (8,528.00 billion KZT) which matches the expected answer perfectly. The response is fully complete as it directly answers the specific question asked about Q2 2024 total assets. The answer is entirely relevant and focused on the query with no extraneous information. Additionally, the answer enhances the response by providing contextual information (4.0% YTD growth) and citing the source document, which adds credibility without detracting from the core answer. All evaluation criteria are met at maximum points."
+      },
+      "context_precision": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.37500000000000006,
+        "relevant_docs": 3,
+        "total_docs": 15,
+        "reasoning": "3/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "Based on the provided documents, **Kaspi Bank's total assets in Q2 2024 were 8,528.00 billion KZT**, representing a 4.0% growth year-to-date.\n\n**Source:** Kaspi Bank - Q2 2024 Financial Statement",
+      "expected_answer": "8528.00 billion KZT"
+    },
+    {
+      "query_id": 6,
+      "query": "What is ForteBank's NPL ratio in Q4 2024?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 1.2845563888549805,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The answer correctly identifies ForteBank's NPL ratio as 5.05% in Q4 2024, matching the expected answer exactly. The response is fully complete as it directly answers the specific question asked without requiring additional information. The answer is entirely relevant, focusing precisely on the queried metric without extraneous details. The inclusion of source attribution and brief contextual explanation about NPL monitoring adds credibility without detracting from the core response. All evaluation criteria are met at maximum points."
+      },
+      "context_precision": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.37500000000000006,
+        "relevant_docs": 3,
+        "total_docs": 15,
+        "reasoning": "3/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "Based on the provided documents, **ForteBank's NPL (Non-Performing Loans) ratio in Q4 2024 is 5.05%**.\n\n**Source:** ForteBank - Q4 2024 Financial Statement\n\nThis metric indicates that 5.05% of ForteBank's loan portfolio consists of non-performing loans, which is monitored as part of the bank's credit risk management framework.",
+      "expected_answer": "5.05%"
+    },
+    {
+      "query_id": 7,
+      "query": "How many digital banking users does Kaspi Bank have in Q3 2024?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 1.8112523555755615,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The ACTUAL ANSWER provides the exact figure (1,343,171) that matches the EXPECTED ANSWER perfectly, demonstrating complete accuracy on the core query. The answer directly addresses the specific question asked about Q3 2024 digital banking users with proper sourcing attribution. The response goes beyond the minimum requirement by providing relevant contextual information (digitalization rate, active mobile users, app downloads) that enhances understanding without introducing irrelevant tangents. The answer is well-structured, cites its source appropriately, and maintains focus on the queried metric. All evaluation criteria are met at maximum levels: the factual lookup is precise, the question is fully answered with the exact requested data point, and the response remains tightly focused on what was asked while adding valuable supplementary context."
+      },
+      "context_precision": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.37500000000000006,
+        "relevant_docs": 3,
+        "total_docs": 15,
+        "reasoning": "3/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "Based on the provided documents, **Kaspi Bank had 1,343,171 digital banking users in Q3 2024**.\n\n**Source:** Kaspi Bank - Q3 2024 Operational Metrics\n\n**Additional Context:**\n- This represents an 85.0% digitalization rate of their total active client base (1,580,202 customers)\n- Active mobile users: 1,001,028\n- Mobile app downloads: 1,221,895",
+      "expected_answer": "1,343,171 digital banking users"
+    },
+    {
+      "query_id": 8,
+      "query": "What is Halyk Bank's market share by assets?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 17.89469003677368,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The actual answer directly provides the expected answer (20.94% for Q4 2024) and goes beyond by offering comprehensive quarterly breakdown throughout 2024. All figures appear internally consistent and logically presented. The answer is fully relevant to the query, directly addressing Halyk Bank's market share by assets. The response is complete, providing not just the point-in-time figure but also temporal context showing how the metric fluctuated across quarters. The table format is clear and well-organized, with proper sourcing attribution. The additional observation about the bank's #1 ranking adds valuable context without detracting from the core answer. No apparent factual errors or omissions detected relative to the query scope."
+      },
+      "context_precision": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 1.2631578947368423,
+        "relevant_docs": 12,
+        "total_docs": 15,
+        "reasoning": "12/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "# Halyk Bank's Market Share by Assets\n\nBased on the provided documents, Halyk Bank's market share by assets throughout 2024 was:\n\n| Quarter | Market Share by Assets | Source |\n|---------|------------------------|--------|\n| Q1 2024 | 23.57% | Halyk Bank - Q1 2024 Market Analysis |\n| Q2 2024 | 17.11% | Halyk Bank - Q2 2024 Market Analysis |\n| Q3 2024 | 18.58% | Halyk Bank - Q3 2024 Market Analysis |\n| Q4 2024 | 20.94% | Halyk Bank - Q4 2024 Market Analysis |\n\n**Key Observation:** Halyk Bank maintained the #1 ranking in Kazakhstan throughout 2024, despite fluctuations in its market share by assets during the year. The bank's market share ranged from 17.11% (Q2) to 23.57% (Q1), with a recovery to 20.94% by year-end Q4 2024.",
+      "expected_answer": "20.94% market share by assets"
+    },
+    {
+      "query_id": 9,
+      "query": "What was ForteBank's net interest margin in Q2 2024?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 1.0805864334106445,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The ACTUAL ANSWER correctly identifies ForteBank's net interest margin in Q2 2024 as 6.42%, which matches the EXPECTED ANSWER exactly. The response is accurate, directly answers the specific question asked, and cites an appropriate source (ForteBank Q2 2024 Financial Statement). The answer is concise and focused without unnecessary information. All three criteria are fully satisfied: the factual figure is correct (accuracy), the question is completely answered with the specific metric requested (completeness), and the response stays precisely on topic (relevance). No additional context, comparisons, or trend analysis was requested, so the straightforward presentation is appropriate."
+      },
+      "context_precision": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.37500000000000006,
+        "relevant_docs": 3,
+        "total_docs": 15,
+        "reasoning": "3/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "Based on the provided documents, **ForteBank's net interest margin in Q2 2024 was 6.42%**.\n\n**Source:** ForteBank - Q2 2024 Financial Statement",
+      "expected_answer": "6.42%"
+    },
+    {
+      "query_id": 10,
+      "query": "How many employees does Halyk Bank have?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 1.7871100902557373,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The answer demonstrates excellent accuracy by correctly identifying 8,816 employees as the current figure, matching the expected answer exactly. It goes beyond the basic query by providing comprehensive historical context showing quarterly employee counts throughout 2024 (Q1: 9,918, Q2: 9,900, Q3: 11,571, Q4: 8,816), which adds valuable insight into workforce trends. The answer is fully complete in addressing the question and remains entirely relevant, with proper sourcing cited. The presentation is well-structured with a clear table format and explicit identification of the most recent figure. While the additional quarterly data wasn't explicitly requested, it enhances the answer's value without introducing any inaccuracies or irrelevant information. The answer successfully balances directness with comprehensive context."
+      },
+      "context_precision": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 1.2631578947368423,
+        "relevant_docs": 12,
+        "total_docs": 15,
+        "reasoning": "12/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "# Halyk Bank Employee Count\n\nBased on the provided documents, Halyk Bank's employee count varies by quarter in 2024:\n\n| Quarter | Employee Count |\n|---------|----------------|\n| Q1 2024 | 9,918 professionals |\n| Q2 2024 | 9,900 professionals |\n| Q3 2024 | 11,571 professionals |\n| Q4 2024 | 8,816 professionals |\n\n**Source:** Halyk Bank Operational Metrics reports for Q1, Q2, Q3, and Q4 2024\n\nThe most recent figure (Q4 2024) shows **8,816 employees** at Halyk Bank.",
+      "expected_answer": "8,816 employees"
+    },
+    {
+      "query_id": 11,
+      "query": "What is Kaspi Bank's loan-to-deposit ratio in Q4 2024?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 1.363980770111084,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The answer correctly identifies Kaspi Bank's loan-to-deposit ratio as 78.6% for Q4 2024, matching the expected answer exactly. The response is fully complete as it directly answers the specific question asked without omissions. The answer is entirely relevant, focusing precisely on the requested metric without extraneous information. The response goes beyond the minimum requirement by providing helpful context about what the ratio means (the relationship between loans and deposits), which adds value without detracting from accuracy. The citation of the source document is appropriate and supports credibility. All evaluation criteria are met at maximum levels."
+      },
+      "context_precision": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.37500000000000006,
+        "relevant_docs": 3,
+        "total_docs": 15,
+        "reasoning": "3/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "Based on the provided documents, **Kaspi Bank's loan-to-deposit ratio in Q4 2024 is 78.6%**.\n\n**Source:** Kaspi Bank - Q4 2024 Financial Statement\n\nThis ratio indicates that for every 100 KZT of customer deposits, Kaspi Bank has 78.6 KZT in loans outstanding, which reflects a healthy balance between lending activity and deposit funding.",
+      "expected_answer": "78.6%"
+    },
+    {
+      "query_id": 12,
+      "query": "What is ForteBank's total active clients count in Q3 2024?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 1.119891881942749,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The ACTUAL ANSWER provides the exact figure (452,291 active clients) that matches the EXPECTED ANSWER perfectly. The response directly addresses the query with the correct numerical data point and includes a source attribution to ForteBank's Q3 2024 Operational Metrics. The answer is concise, focused, and fully responsive to the specific question asked. All three criteria are maximized: the information is accurate (matching expected answer), complete (provides the single requested metric), and highly relevant (directly answers what was asked with no extraneous information)."
+      },
+      "context_precision": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.37500000000000006,
+        "relevant_docs": 3,
+        "total_docs": 15,
+        "reasoning": "3/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "Based on the provided documents, **ForteBank's total active clients count in Q3 2024 was 452,291 customers**.\n\n**Source:** ForteBank - Q3 2024 Operational Metrics",
+      "expected_answer": "452,291 active clients"
+    },
+    {
+      "query_id": 13,
+      "query": "What was Halyk Bank's cost-to-income ratio in Q2 2024?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 1.862898349761963,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The ACTUAL ANSWER provides the exact figure (36.1%) that matches the EXPECTED ANSWER, demonstrating perfect accuracy for the core factual claim. The answer directly addresses the specific query about Halyk Bank's Q2 2024 cost-to-income ratio with no errors or ambiguities. The response is complete as it fully answers the straightforward factual question asked, and it is entirely relevant with no extraneous information. The answer includes appropriate source attribution, which adds credibility. While the response could theoretically be enhanced with additional context (such as year-over-year comparison, peer benchmarking, or trend analysis), such additions are not required to answer the specific question posed. The answer meets all criteria at maximum levels for a direct factual lookup query."
+      },
+      "context_precision": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.37500000000000006,
+        "relevant_docs": 3,
+        "total_docs": 15,
+        "reasoning": "3/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "Based on the provided documents, **Halyk Bank's cost-to-income ratio in Q2 2024 was 36.1%**.\n\n**Source:** Halyk Bank - Q2 2024 Financial Statement",
+      "expected_answer": "36.1%"
+    },
+    {
+      "query_id": 14,
+      "query": "What is Kaspi Bank's ranking in Kazakhstan?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 1.656189203262329,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The answer directly and correctly identifies Kaspi Bank's ranking as #2 in Kazakhstan, matching the expected answer precisely. The response demonstrates strong accuracy by providing consistent ranking information across all four quarters (Q1-Q4 2024), with no contradictions or errors in the stated facts. Completeness is fully satisfied as the answer comprehensively addresses the query with temporal consistency and supporting context. Relevance is excellent as every element of the response focuses directly on answering the specific question asked. The inclusion of comparative context (Halyk Bank at #1 and ForteBank at #3) adds valuable market perspective without detracting from the core answer. The response is well-structured, clear, and provides appropriate supporting detail that enhances rather than obscures the main finding."
+      },
+      "context_precision": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.9473684210526314,
+        "relevant_docs": 9,
+        "total_docs": 15,
+        "reasoning": "9/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "Based on the provided documents, **Kaspi Bank's ranking in Kazakhstan is #2** across all quarters reported (Q1 2024 through Q4 2024).\n\nThis ranking is consistent throughout the financial reports:\n- Q1 2024: Ranking #2\n- Q2 2024: Ranking #2\n- Q3 2024: Ranking #2\n- Q4 2024: Ranking #2\n\nFor context, Halyk Bank holds the #1 position, and ForteBank ranks #3 in the Kazakhstani banking market.",
+      "expected_answer": "#2 ranking"
+    },
+    {
+      "query_id": 15,
+      "query": "What is ForteBank's liquidity coverage ratio in Q1 2024?",
+      "query_type": "fact_lookup",
+      "complexity": "simple",
+      "success": true,
+      "processing_time": 1.3093452453613281,
+      "answer_relevancy": {
+        "accuracy": 40,
+        "completeness": 30,
+        "relevance": 30,
+        "total": 100,
+        "reasoning": "The ACTUAL ANSWER correctly identifies ForteBank's LCR in Q1 2024 as 149.8%, which matches the EXPECTED ANSWER exactly. The response is accurate in stating the specific metric requested. The answer is complete as it directly addresses the query with the precise figure and includes contextual information about regulatory compliance and liquidity position strength. The response is highly relevant, staying focused on the specific question asked without extraneous information. The answer appropriately cites the source document and provides brief interpretive context that adds value without detracting from the core answer. All three criteria are fully satisfied."
+      },
+      "context_precision": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.37500000000000006,
+        "relevant_docs": 3,
+        "total_docs": 15,
+        "reasoning": "3/15 documents matched expected criteria"
+      },
+      "num_sources": 15,
+      "answer": "Based on the provided documents, **ForteBank's Liquidity Coverage Ratio (LCR) in Q1 2024 was 149.8%**.\n\n**Source:** ForteBank - Q1 2024 Financial Statement\n\nThis ratio exceeds the regulatory requirement and indicates that ForteBank maintained a strong liquidity position in the first quarter of 2024.",
+      "expected_answer": "149.8%"
+    }
+  ]
+}
