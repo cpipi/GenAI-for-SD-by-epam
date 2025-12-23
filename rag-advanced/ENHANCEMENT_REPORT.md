@@ -1,4 +1,5 @@
-https://teams.microsoft.com/l/message/48:notes/1766514580751?context=%7B%22contextType%22%3A%22chat%22%2C%22oid%22%3A%228%3Aorgid%3A4d8da9ec-eb61-4d5c-8b40-e9a802e21a18%22%7D
+[https://teams.microsoft.com/l/message/48:notes/1766514580751?context=%7B%22contextType%22%3A%22chat%22%2C%22oid%22%3A%228%3Aorgid%3A4d8da9ec-eb61-4d5c-8b40-e9a802e21a18%22%7D
+](https://epam-my.sharepoint.com/:v:/p/anuar_sultan/IQC0X4O00eD2ToPn-mdzEOdIATWHbfuvaOdow0C51TmGtsc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dGx0J7)
 
 # RAG Enhancement
 
