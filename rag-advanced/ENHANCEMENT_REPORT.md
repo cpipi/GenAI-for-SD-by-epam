@@ -1,3 +1,5 @@
+https://teams.microsoft.com/l/message/48:notes/1766514580751?context=%7B%22contextType%22%3A%22chat%22%2C%22oid%22%3A%228%3Aorgid%3A4d8da9ec-eb61-4d5c-8b40-e9a802e21a18%22%7D
+
 # RAG Enhancement
 
 ## 30% Improvement Threshold Achieved
