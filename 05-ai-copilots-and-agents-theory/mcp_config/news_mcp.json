@@ -1,0 +1,10 @@
+{
+  "name": "thenewsapi",
+  "description": "MCP-compatible HTTP tool for TheNews API with a public demo token",
+  "primary_endpoint": "https://api.thenewsapi.com/v1/news",
+  "fallback": {
+    "name": "hackernews",
+    "endpoint": "https://hn.algolia.com/api/v1/search"
+  },
+  "notes": "Set NEWS_API_TOKEN for higher quotas; demo token works for basic tests."
+}

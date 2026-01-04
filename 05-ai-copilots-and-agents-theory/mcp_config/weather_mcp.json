@@ -1,0 +1,9 @@
+{
+  "name": "open-meteo",
+  "description": "Public MCP server for weather and geocoding via Open-Meteo",
+  "endpoints": {
+    "geocoding": "https://geocoding-api.open-meteo.com/v1/search",
+    "forecast": "https://api.open-meteo.com/v1/forecast"
+  },
+  "notes": "No API key required. Supports current_weather=true and daily forecasts."
+}

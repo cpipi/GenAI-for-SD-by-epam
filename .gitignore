@@ -9,3 +9,5 @@ __pycache__/
 .venv
 venv/
 *.sh
+05-ai-copilots-and-agents-theory/context/*
+05-ai-copilots-and-agents-theory/video_link.txt
