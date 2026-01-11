@@ -11,3 +11,8 @@ venv/
 *.sh
 05-ai-copilots-and-agents-theory/context/*
 05-ai-copilots-and-agents-theory/video_link.txt
+06-no-code-agent-platform/docker-compose.yml
+06-no-code-agent-platform/Money Manager Main.json
+06-no-code-agent-platform/ENHANCEMENT_GUIDE.md
+06-no-code-agent-platform/README.md
+06-no-code-agent-platform/VIDEO_SCRIPT.md
