@@ -8,6 +8,7 @@ __pycache__/
 .docker/
 .venv
 venv/
+.venv312/
 *.sh
 05-ai-copilots-and-agents-theory/context/*
 05-ai-copilots-and-agents-theory/video_link.txt
@@ -16,3 +17,61 @@ venv/
 06-no-code-agent-platform/ENHANCEMENT_GUIDE.md
 06-no-code-agent-platform/README.md
 06-no-code-agent-platform/VIDEO_SCRIPT.md
+06-no-code-agent-platform/No-Code Agent Platform_Independent Workflow Design_Anuar_Sultan.zip
+06-no-code-agent-platform/video-link.txt
+
+# Node.js dependencies and generated files for Task 2
+07-ai-assisted-development/Task 2/node_modules/
+07-ai-assisted-development/Task 2/coverage/
+07-ai-assisted-development/Task 2/package-lock.json
+07-ai-assisted-development/Task 2/*.log
+07-ai-assisted-development/Task 2/.nyc_output/
+07-ai-assisted-development/Task 2/task2.txt
+AI_Assisted_Development_PT2_Anuar_Sultan.md
+07-ai-assisted-development/Task 3/task description.md
+
+# Python (global)
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing (global)
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Databases (global)
+*.db
+*.sqlite
+*.sqlite3
+
+# IDEs (global)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS (global)
+.DS_Store
+Thumbs.db
