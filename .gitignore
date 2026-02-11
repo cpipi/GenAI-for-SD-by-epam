@@ -1,3 +1,5 @@
+AI_Assisted_Development_PT3_Anuar_Sultan.md
+
 neuro-network-python-main/NEURON_NETWORK_README.md
 neuro-network-python-main/com/techorda/neuro/demo/service/max_finder_demo.py
 .env
@@ -27,7 +29,6 @@ venv/
 07-ai-assisted-development/Task 2/*.log
 07-ai-assisted-development/Task 2/.nyc_output/
 07-ai-assisted-development/Task 2/task2.txt
-AI_Assisted_Development_PT2_Anuar_Sultan.md
 07-ai-assisted-development/Task 3/task description.md
 
 # Python (global)
@@ -75,3 +76,4 @@ htmlcov/
 # OS (global)
 .DS_Store
 Thumbs.db
+07-ai-assisted-development/Task 4/task description.md
