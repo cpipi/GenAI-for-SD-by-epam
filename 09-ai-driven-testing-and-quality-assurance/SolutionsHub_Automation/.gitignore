@@ -1,0 +1,13 @@
+target/
+build/
+.gradle/
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.DS_Store
+*.log
+screenshots/
+test-output/
+*.class

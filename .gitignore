@@ -77,3 +77,14 @@ htmlcov/
 .DS_Store
 Thumbs.db
 07-ai-assisted-development/Task 4/task description.md
+AI_Assisted_Development_PT4_Anuar_Sultan.md
+
+# Test Automation Project (Task 09)
+09-ai-driven-testing-and-quality-assurance/SolutionsHub_Automation/build/
+09-ai-driven-testing-and-quality-assurance/SolutionsHub_Automation/target/
+09-ai-driven-testing-and-quality-assurance/SolutionsHub_Automation/.gradle/
+09-ai-driven-testing-and-quality-assurance/SolutionsHub_Automation/gradlew
+09-ai-driven-testing-and-quality-assurance/SolutionsHub_Automation/gradlew.bat
+09-ai-driven-testing-and-quality-assurance/SolutionsHub_Automation/gradle/wrapper/gradle-wrapper.jar
+09-ai-driven-testing-and-quality-assurance/Task 1.md
+09-ai-driven-testing-and-quality-assurance/Task 2.md
