@@ -1,0 +1,15 @@
+{
+  "case_id": "SAMPLE-HIGH-002",
+  "customer_id": "vladimir putin",
+  "transaction_amount": 5000,
+  "transaction_type": "transfer",
+  "channel": "online",
+  "device_location": "RU",
+  "customer_profile": {
+    "account_age_days": 90,
+    "avg_monthly_volume": 8000,
+    "previous_txn_count": 12,
+    "country_of_residence": "RU"
+  },
+  "description": "Sanctioned entity match - triggers hard policy gate for sanctions hit. Also high-risk jurisdiction."
+}

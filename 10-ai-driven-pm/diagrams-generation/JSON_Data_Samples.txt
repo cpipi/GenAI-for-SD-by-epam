@@ -1,0 +1,268 @@
+shipment_tracking.json
+{
+  "shipment_id": "123456789",
+  "order_id": "987654321",
+  "customer_id": "54321",
+  "shipment_status": "In Transit",
+  "estimated_delivery_date": "2024-10-12T16:00:00Z",
+  "origin": "Berlin Warehouse",
+  "destination": "Customer Address",
+  "tracking_events": [
+    {
+      "event_type": "Shipment Dispatched",
+      "timestamp": "2024-10-08T10:00:00Z",
+      "location": "Berlin Warehouse"
+    },
+    {
+      "event_type": "In Transit",
+      "timestamp": "2024-10-09T12:00:00Z",
+      "location": "Distribution Center"
+    }
+  ],
+  "carrier": {
+    "carrier_id": "DHL123",
+    "carrier_name": "DHL"
+  },
+  "metadata": {
+    "created_at": "2024-10-08T09:00:00Z",
+    "updated_at": "2024-10-09T12:05:00Z",
+    "source_system": "WMS"
+  },
+  "technical_fields": {
+    "api_version": "v1.3",
+    "processing_time_ms": 450
+  }
+}
+
+2. order_details.json
+{
+  "order_id": "987654321",
+  "customer_id": "54321",
+  "order_date": "2024-10-05T14:00:00Z",
+  "items": [
+    {
+      "item_id": "A001",
+      "product_name": "Laptop",
+      "quantity": 1,
+      "price_per_unit": 1200.00,
+      "currency": "EUR"
+    },
+    {
+      "item_id": "B002",
+      "product_name": "Mouse",
+      "quantity": 2,
+      "price_per_unit": 25.00,
+      "currency": "EUR"
+    }
+  ],
+  "payment": {
+    "payment_method": "Credit Card",
+    "total_amount": 1250.00,
+    "currency": "EUR",
+    "payment_status": "Paid"
+  },
+  "shipping": {
+    "shipment_id": "123456789",
+    "shipment_status": "In Transit",
+    "carrier_name": "DHL"
+  },
+  "metadata": {
+    "created_at": "2024-10-05T14:05:00Z",
+    "updated_at": "2024-10-08T10:00:00Z"
+  },
+  "technical_fields": {
+    "order_processing_time_ms": 550,
+    "integration_type": "API"
+  }
+}
+
+3. notification_payload.json
+{
+  "notification_id": "notif_8765",
+  "user_id": "54321",
+  "notification_type": "Order Shipped",
+  "channels": ["Email", "SMS"],
+  "content": {
+    "subject": "Your Order Has Been Shipped!",
+    "body": "Order #987654321 has been shipped and is on its way."
+  },
+  "delivery_status": {
+    "email_status": "Delivered",
+    "sms_status": "Pending"
+  },
+  "metadata": {
+    "created_at": "2024-10-08T10:05:00Z",
+    "last_updated": "2024-10-08T10:10:00Z",
+    "source_event": "Order Shipped Event"
+  },
+  "technical_fields": {
+    "priority": "High",
+    "api_version": "v2.1",
+    "delivery_attempts": 1
+  }
+}
+
+4. user_profile_data.json
+{
+  "user_id": "54321",
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com",
+  "phone_number": "+123456789",
+  "address": {
+    "street": "123 Main St",
+    "city": "Berlin",
+    "zip_code": "10115",
+    "country": "Germany"
+  },
+  "preferences": {
+    "notification_channels": ["Email", "Push"],
+    "shipment_updates": true,
+    "marketing_emails": false
+  },
+  "metadata": {
+    "created_at": "2024-01-10T09:00:00Z",
+    "last_updated": "2024-10-08T11:00:00Z"
+  },
+  "technical_fields": {
+    "account_status": "Active",
+    "data_encryption": "AES256",
+    "login_attempts": 3
+  }
+}
+
+5. auth_token_metadata.json
+{
+  "token_id": "auth_123456",
+  "user_id": "54321",
+  "issued_at": "2024-10-08T11:00:00Z",
+  "expires_at": "2024-10-08T13:00:00Z",
+  "scopes": ["read:order", "write:feedback"],
+  "revoked": false,
+  "client_ip": "192.168.1.1",
+  "metadata": {
+    "created_at": "2024-10-08T11:00:00Z",
+    "device_info": "Chrome 92, Windows 10"
+  },
+  "technical_fields": {
+    "token_type": "Bearer",
+    "encryption_algorithm": "HS256",
+    "validation_attempts": 2
+  }
+}
+
+6. system_event_log.json
+{
+  "event_id": "event_9876",
+  "event_type": "System Update",
+  "description": "OMS synchronized with CRM",
+  "event_timestamp": "2024-10-08T09:30:00Z",
+  "severity": "Low",
+  "impacted_services": ["OMS", "CRM"],
+  "resolution_status": "Completed",
+  "metadata": {
+    "triggered_by": "system",
+    "related_ticket": "ticket_5678"
+  },
+  "technical_fields": {
+    "event_origin": "OMS",
+    "processing_duration_ms": 600,
+    "retry_attempts": 0
+  }
+}
+
+7. user_feedback.json
+{
+  "feedback_id": "feedback_6543",
+  "user_id": "54321",
+  "feedback_category": "Shipment Delay",
+  "timestamp": "2024-10-08T12:00:00Z",
+  "feedback_text": "The shipment tracking is not being updated in real-time.",
+  "rating": 2,
+  "status": "Pending Review",
+  "assigned_to": "support_team_1",
+  "metadata": {
+    "created_at": "2024-10-08T12:00:00Z",
+    "channel": "Customer Portal"
+  },
+  "technical_fields": {
+    "feedback_priority": "Medium",
+    "sla_due_date": "2024-10-10T12:00:00Z",
+    "feedback_version": "v1.0"
+  }
+}
+
+8. data_sync_status.json
+{
+  "sync_id": "sync_4321",
+  "source_system": "WMS",
+  "target_system": "OMS",
+  "sync_start_time": "2024-10-08T08:00:00Z",
+  "sync_end_time": "2024-10-08T08:10:00Z",
+  "status": "Success",
+  "records_synced": 3500,
+  "errors": [
+    {
+      "record_id": "rec_123",
+      "error_message": "Invalid timestamp format"
+    }
+  ],
+  "metadata": {
+    "created_at": "2024-10-08T08:00:00Z",
+    "updated_at": "2024-10-08T08:15:00Z"
+  },
+  "technical_fields": {
+    "retry_count": 1,
+    "processing_time_ms": 600000,
+    "sync_strategy": "Incremental"
+  }
+}
+
+9. carrier_tracking_data.json
+{
+  "carrier_id": "DHL123",
+  "tracking_number": "TRACK123456789",
+  "shipment_status": "Out for Delivery",
+  "events": [
+    {
+      "event_type": "Shipment Received at Distribution Center",
+      "timestamp": "2024-10-08T10:00:00Z",
+      "location": "Berlin Distribution Center"
+    },
+    {
+      "event_type": "Out for Delivery",
+      "timestamp": "2024-10-08T12:00:00Z",
+      "location": "Berlin"
+    }
+  ],
+  "metadata": {
+    "last_update": "2024-10-08T12:05:00Z",
+    "origin": "Carrier API"
+  },
+  "technical_fields": {
+    "carrier_api_version": "v1.4",
+    "processing_delay_ms": 300
+  }
+}
+
+10. cache_status.json
+{
+  "cache_id": "cache_5678",
+  "service": "Shipment Tracking",
+  "last_cache_update": "2024-10-08T11:30:00Z",
+  "cache_status": "Active",
+  "data_synced": true,
+  "data_points_cached": 5000,
+  "expiration_policy": {
+    "type": "Time-Based",
+    "expiry_time_minutes": 15
+  },
+  "metadata": {
+    "created_at": "2024-10-08T11:00:00Z",
+    "updated_at": "2024-10-08T11:45:00Z"
+  },
+  "technical_fields": {
+    "cache_strategy": "Write-Through",
+    "hits": 3200,
+    "misses": 45
+  }
+}

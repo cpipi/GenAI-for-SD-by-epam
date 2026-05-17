@@ -1,0 +1,15 @@
+{
+  "case_id": "SAMPLE-HIGH-003",
+  "customer_id": "CUST-I9J0K1L2",
+  "transaction_amount": 150000,
+  "transaction_type": "transfer",
+  "channel": "wire_transfer",
+  "device_location": "RU",
+  "customer_profile": {
+    "account_age_days": 20,
+    "avg_monthly_volume": 2000,
+    "previous_txn_count": 3,
+    "country_of_residence": "RU"
+  },
+  "description": "International wire to high-risk jurisdiction (RU) with large amount. New account with spike in activity."
+}

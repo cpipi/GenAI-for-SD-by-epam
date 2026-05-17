@@ -1,0 +1,104 @@
+[
+  {
+    "case_id": "edge_001_zero_amount",
+    "customer_id": "cust_zero_amount",
+    "transaction_amount": 0.0,
+    "transaction_type": "payment",
+    "channel": "online",
+    "device_location": "US",
+    "timestamp": "2026-05-17T20:53:36.342889",
+    "customer_profile": {
+      "account_age_days": 365,
+      "avg_monthly_volume": 500,
+      "previous_txn_count": 90,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "approve",
+    "edge_case_tag": "zero_amount"
+  },
+  {
+    "case_id": "edge_002_missing_customer_id",
+    "customer_id": null,
+    "transaction_amount": 1500.0,
+    "transaction_type": "transfer",
+    "channel": "online",
+    "device_location": "US",
+    "timestamp": "2026-05-17T20:53:36.342889",
+    "customer_profile": {
+      "account_age_days": 120,
+      "avg_monthly_volume": 3000,
+      "previous_txn_count": 40,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "manual_review",
+    "edge_case_tag": "missing_required_field"
+  },
+  {
+    "case_id": "edge_003_negative_amount",
+    "customer_id": "cust_negative_amount",
+    "transaction_amount": -10.0,
+    "transaction_type": "payment",
+    "channel": "mobile_app",
+    "device_location": "US",
+    "timestamp": "2026-05-17T20:53:36.342889",
+    "customer_profile": {
+      "account_age_days": 400,
+      "avg_monthly_volume": 800,
+      "previous_txn_count": 150,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "manual_review",
+    "edge_case_tag": "invalid_amount"
+  },
+  {
+    "case_id": "edge_004_invalid_channel",
+    "customer_id": "cust_invalid_channel",
+    "transaction_amount": 750.0,
+    "transaction_type": "transfer",
+    "channel": "chatbot",
+    "device_location": "DE",
+    "timestamp": "2026-05-17T20:53:36.342889",
+    "customer_profile": {
+      "account_age_days": 210,
+      "avg_monthly_volume": 2600,
+      "previous_txn_count": 65,
+      "country_of_residence": "DE"
+    },
+    "expected_decision": "manual_review",
+    "edge_case_tag": "invalid_channel"
+  },
+  {
+    "case_id": "edge_005_large_amount_hard_gate",
+    "customer_id": "cust_large_amount",
+    "transaction_amount": 250000.0,
+    "transaction_type": "transfer",
+    "channel": "wire_transfer",
+    "device_location": "US",
+    "timestamp": "2026-05-17T20:53:36.342889",
+    "customer_profile": {
+      "account_age_days": 10,
+      "avg_monthly_volume": 400,
+      "previous_txn_count": 2,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "block",
+    "edge_case_tag": "hard_gate_amount"
+  },
+  {
+    "case_id": "edge_006_high_risk_country",
+    "customer_id": "cust_high_risk_geo",
+    "transaction_amount": 12000.0,
+    "transaction_type": "transfer",
+    "channel": "international",
+    "device_location": "IR",
+    "timestamp": "2026-05-17T20:53:36.342889",
+    "customer_profile": {
+      "account_age_days": 20,
+      "avg_monthly_volume": 900,
+      "previous_txn_count": 3,
+      "country_of_residence": "IR"
+    },
+    "expected_decision": "manual_review",
+    "edge_case_tag": "high_risk_country"
+  }
+]

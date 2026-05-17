@@ -1,0 +1,42 @@
+CareConnect – A Unified Healthcare Communication Platform
+"CareConnect" is an enterprise-grade care coordination and patient communication platform widely used by hospitals and large healthcare networks. As part of its 2025 product roadmap, multiple new feature requests have been gathered from various stakeholders — physicians, nurses, IT administrators, patient advocates, and external compliance teams. These features aim to improve clinical communication, workflow automation, and patient engagement.
+
+Features:
+
+Secure Image Sharing: Allow clinicians to securely share images (X-rays, photos) in patient threads.
+EMR Integration Enhancements: Improve real-time syncing of patient status with EMR systems.
+Auto-Translation in Chat: Automatically translate patient messages into provider's preferred language.
+Care Pathway Templates: Predefined care communication templates by condition (e.g., diabetes, asthma).
+User Access Audit Logs: Detailed logs of who accessed which patient data, addressing compliance concerns
+Patient Mood Tracker: Weekly patient-reported mood check-in and graph trends over time.
+Other details:
+
+There is a need to prioritize these features to determine what should go into the upcoming release, Now, Then, Next.
+Goal is to maximize stakeholder value, minimize delivery risk
+Current capacity for Now is 30 SP
+Based on the elicitation results below table is gathered
+Feature	Business Value	Stakeholder Need	Urgency	Cost / Effort	Technical Risk	Regulatory Impact	User Experience Gain
+Secure Image Sharing	High: Enables faster diagnosis, improves outcomes	Strongly requested by clinicians	Medium	Medium (8 SPs)	Medium: Encrypted transfer & storage	Moderate: Must comply with HIPAA image rules	High: Streamlined visual communication
+EMR Integration Enh.	Very High: Streamlines workflows and reduces admin time	Critical for IT and clinical operations	High	High (13 SPs)	High: Depends on 3rd-party EMRs	High: Sync errors may affect compliance	Medium
+Auto-Translation in Chat	Medium: Affects non-English speakers	Important for Patient Advocacy team	Medium	Medium (8 SPs)	Medium: Language model, NLP integration	Low: UX not regulated	High: Improves accessibility
+Care Pathway Templates	High: Supports care coordination and standardization	Supported by Nursing Leads	Low	Low (5 SPs)	Low: Just content and workflow logic	Low: Clinical quality rather than privacy	Medium
+Audit Logs	High: Supports security and compliance	Strong from Compliance and CIO	Very High	High (13 SPs)	Medium: Logging and role mapping	Very High: Required by HIPAA	Low: Back-end only
+Patient Mood Tracker	Medium: Helps track mental health patterns	Requested by Behavioral Health team	Low	Low (3 SPs)	Low: Self-contained tracker	Low	Medium
+Note that you can download this table as .docx file from the course page (Course AI-Assisted BA: Analysis and Design Phases -> Module Practice -> Lesson Practical Task. Prioritization).
+
+Task
+With GenAI you need to do the following:
+
+Choose and justify a suitable prioritization method (MoSCoW, WSJF, Weighted Scoring).
+Build a prioritization matrix using the given values.
+Suggest top 3 features to include in the next release.
+Steps to do Task
+Do to EPAM DIAL and use a thinking and reasoning model (such as Gemini 2.5 Model).
+Write prompt to identify right prioritization technique from what is given in the task and use case with proper justification.
+Write prompt in such a way it will understand the Usecase, datapoints, chat story and ask few clarifying questions to you to answer any more information needed for prioritization.
+Final output should include below 3 sections
+1st Output from model including model's questions
+Your responses
+2nd Output which includes Prioritization technique with Justification and 3 top features and justification.
+Copy output in Markdown format.
+Submit all the output as the solution to the task.

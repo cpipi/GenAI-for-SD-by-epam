@@ -1,0 +1,525 @@
+[
+  {
+    "id": "playbook_001",
+    "scenario": "Unusual Transaction Velocity",
+    "investigation_steps": [
+      "1. Establish baseline: calculate average transactions/month for past 12 months",
+      "2. Identify spike: current velocity vs. baseline (flag if >300% increase)",
+      "3. Categorize transaction types: are new types appearing (e.g., international)?",
+      "4. Review beneficiary patterns: new payees appearing? Concentration vs. diversification?",
+      "5. Assess account funding: any new deposit patterns or large inbound transfers?",
+      "6. Check if velocity spike correlates with account changes (new signers, owner changes)",
+      "7. Contact account holder for business explanation of activity increase",
+      "8. If business explanation inconsistent with account activity, escalate",
+      "9. Implement enhanced monitoring: daily alert thresholds",
+      "10. Document findings and risk assessment in file"
+    ],
+    "key_indicators": [
+      "500%+ velocity increase",
+      "New transaction types",
+      "Geolocation changes",
+      "New beneficiaries"
+    ],
+    "escalation_threshold": ">1000% velocity spike month-over-month",
+    "approval_authority": "Risk Committee",
+    "estimated_investigation_hours": 15,
+    "created_date": "2025-07-10T20:53:36.338736",
+    "sar_filing_likelihood": 0.65
+  },
+  {
+    "id": "playbook_002",
+    "scenario": "Structuring Detection",
+    "investigation_steps": [
+      "1. Verify transaction amounts are consistently below $10k CTR threshold",
+      "2. Check if deposits follow mathematical pattern (e.g., $9,900 repeated)",
+      "3. Identify source of funds via ID verification and beneficiary documentation",
+      "4. Review account for multiple related depositors or rapid account openings",
+      "5. Check if funds immediately transferred out to third parties",
+      "6. Pull transaction timeline for past 90-180 days to establish pattern",
+      "7. Interview account holder regarding deposit source and beneficiaries",
+      "8. File SAR if structuring intent confirmed (Recommendation 10 violation)"
+    ],
+    "key_indicators": [
+      "Round amounts",
+      "Multiple depositors",
+      "Immediate transfers out",
+      "CTR avoidance pattern"
+    ],
+    "escalation_threshold": "Pattern of 5+ transactions in 30 days below threshold",
+    "approval_authority": "Compliance Officer",
+    "estimated_investigation_hours": 5,
+    "created_date": "2025-10-19T20:53:36.338787",
+    "sar_filing_likelihood": 0.52
+  },
+  {
+    "id": "playbook_003",
+    "scenario": "Unusual Transaction Velocity",
+    "investigation_steps": [
+      "1. Establish baseline: calculate average transactions/month for past 12 months",
+      "2. Identify spike: current velocity vs. baseline (flag if >300% increase)",
+      "3. Categorize transaction types: are new types appearing (e.g., international)?",
+      "4. Review beneficiary patterns: new payees appearing? Concentration vs. diversification?",
+      "5. Assess account funding: any new deposit patterns or large inbound transfers?",
+      "6. Check if velocity spike correlates with account changes (new signers, owner changes)",
+      "7. Contact account holder for business explanation of activity increase",
+      "8. If business explanation inconsistent with account activity, escalate",
+      "9. Implement enhanced monitoring: daily alert thresholds",
+      "10. Document findings and risk assessment in file"
+    ],
+    "key_indicators": [
+      "500%+ velocity increase",
+      "New transaction types",
+      "Geolocation changes",
+      "New beneficiaries"
+    ],
+    "escalation_threshold": ">1000% velocity spike month-over-month",
+    "approval_authority": "Risk Committee",
+    "estimated_investigation_hours": 7,
+    "created_date": "2025-10-13T20:53:36.338844",
+    "sar_filing_likelihood": 0.77
+  },
+  {
+    "id": "playbook_004",
+    "scenario": "High-Value Wire to High-Risk Jurisdiction",
+    "investigation_steps": [
+      "1. Verify beneficiary identity and jurisdiction (check FATF black/grey list)",
+      "2. Confirm legitimate business purpose with customer (obtain written explanation)",
+      "3. Review invoice/documentation supporting claimed transaction purpose",
+      "4. Cross-reference beneficiary against OFAC/PEP databases",
+      "5. Assess account history for consistency with stated business",
+      "6. Verify beneficiary bank is not on high-risk institution list",
+      "7. Implement Enhanced Due Diligence (EDD) including source of funds verification",
+      "8. Obtain senior management approval for wire >$100k",
+      "9. Document decision with full file memo",
+      "10. Monitor beneficiary account for suspicious onward transfers"
+    ],
+    "key_indicators": [
+      "Wire >$50k",
+      "High-risk destination",
+      "No prior history",
+      "Mismatched business purpose"
+    ],
+    "escalation_threshold": "Wire >$250k to grey/black list country",
+    "approval_authority": "VP Risk Management",
+    "estimated_investigation_hours": 11,
+    "created_date": "2025-06-08T20:53:36.338862",
+    "sar_filing_likelihood": 0.69
+  },
+  {
+    "id": "playbook_005",
+    "scenario": "Dormant Account Activation",
+    "investigation_steps": [
+      "1. Confirm account has been dormant >6 months with no transactions",
+      "2. Review login patterns for geolocation changes immediately prior to withdrawal",
+      "3. Verify if credentials were reset or email address changed recently",
+      "4. Check for new beneficiaries added to account within 30 days of reactivation",
+      "5. Assess if transaction amount is anomalous relative to historical avg",
+      "6. Contact account holder to confirm legitimate business purpose",
+      "7. If unable to verify ownership, implement re-KYC process",
+      "8. Flag for fraud investigation if indicators of account compromise detected",
+      "9. If confirmed fraud, freeze account and report to law enforcement"
+    ],
+    "key_indicators": [
+      "6+ months inactivity",
+      "Geolocation anomaly",
+      "New beneficiary",
+      "Large withdrawal"
+    ],
+    "escalation_threshold": "Any withdrawal >$50k after 12+ month dormancy",
+    "approval_authority": "Fraud Investigation Team",
+    "estimated_investigation_hours": 15,
+    "created_date": "2025-06-10T20:53:36.338954",
+    "sar_filing_likelihood": 0.58
+  },
+  {
+    "id": "playbook_006",
+    "scenario": "Unusual Transaction Velocity",
+    "investigation_steps": [
+      "1. Establish baseline: calculate average transactions/month for past 12 months",
+      "2. Identify spike: current velocity vs. baseline (flag if >300% increase)",
+      "3. Categorize transaction types: are new types appearing (e.g., international)?",
+      "4. Review beneficiary patterns: new payees appearing? Concentration vs. diversification?",
+      "5. Assess account funding: any new deposit patterns or large inbound transfers?",
+      "6. Check if velocity spike correlates with account changes (new signers, owner changes)",
+      "7. Contact account holder for business explanation of activity increase",
+      "8. If business explanation inconsistent with account activity, escalate",
+      "9. Implement enhanced monitoring: daily alert thresholds",
+      "10. Document findings and risk assessment in file"
+    ],
+    "key_indicators": [
+      "500%+ velocity increase",
+      "New transaction types",
+      "Geolocation changes",
+      "New beneficiaries"
+    ],
+    "escalation_threshold": ">1000% velocity spike month-over-month",
+    "approval_authority": "Risk Committee",
+    "estimated_investigation_hours": 11,
+    "created_date": "2025-10-31T20:53:36.338974",
+    "sar_filing_likelihood": 0.57
+  },
+  {
+    "id": "playbook_007",
+    "scenario": "Sanctions List Hit",
+    "investigation_steps": [
+      "1. Confirm name match confidence level (90%+ vs manual review)",
+      "2. Cross-reference with multiple OFAC lists (SDN, HQ, Blocked List)",
+      "3. Check for exact name match vs. phonetic/potential false positive",
+      "4. Verify account opening date and historical transactions",
+      "5. Block account immediately to prevent further transactions",
+      "6. Freeze all assets and segregate into suspense account",
+      "7. File OFAC Blocking Report within 10 calendar days",
+      "8. Notify customer if account blocked (after legal review)",
+      "9. Report to FinCEN SAR within 30 days if proceeds involved"
+    ],
+    "key_indicators": [
+      "OFAC SDN match",
+      "High-risk jurisdiction origin",
+      "PEP identification"
+    ],
+    "escalation_threshold": "Sanctions list match = immediate block",
+    "approval_authority": "Legal/Compliance Officer",
+    "estimated_investigation_hours": 5,
+    "created_date": "2025-12-10T20:53:36.338989",
+    "sar_filing_likelihood": 0.57
+  },
+  {
+    "id": "playbook_008",
+    "scenario": "Unusual Transaction Velocity",
+    "investigation_steps": [
+      "1. Establish baseline: calculate average transactions/month for past 12 months",
+      "2. Identify spike: current velocity vs. baseline (flag if >300% increase)",
+      "3. Categorize transaction types: are new types appearing (e.g., international)?",
+      "4. Review beneficiary patterns: new payees appearing? Concentration vs. diversification?",
+      "5. Assess account funding: any new deposit patterns or large inbound transfers?",
+      "6. Check if velocity spike correlates with account changes (new signers, owner changes)",
+      "7. Contact account holder for business explanation of activity increase",
+      "8. If business explanation inconsistent with account activity, escalate",
+      "9. Implement enhanced monitoring: daily alert thresholds",
+      "10. Document findings and risk assessment in file"
+    ],
+    "key_indicators": [
+      "500%+ velocity increase",
+      "New transaction types",
+      "Geolocation changes",
+      "New beneficiaries"
+    ],
+    "escalation_threshold": ">1000% velocity spike month-over-month",
+    "approval_authority": "Risk Committee",
+    "estimated_investigation_hours": 12,
+    "created_date": "2025-12-14T20:53:36.339002",
+    "sar_filing_likelihood": 0.51
+  },
+  {
+    "id": "playbook_009",
+    "scenario": "Unusual Transaction Velocity",
+    "investigation_steps": [
+      "1. Establish baseline: calculate average transactions/month for past 12 months",
+      "2. Identify spike: current velocity vs. baseline (flag if >300% increase)",
+      "3. Categorize transaction types: are new types appearing (e.g., international)?",
+      "4. Review beneficiary patterns: new payees appearing? Concentration vs. diversification?",
+      "5. Assess account funding: any new deposit patterns or large inbound transfers?",
+      "6. Check if velocity spike correlates with account changes (new signers, owner changes)",
+      "7. Contact account holder for business explanation of activity increase",
+      "8. If business explanation inconsistent with account activity, escalate",
+      "9. Implement enhanced monitoring: daily alert thresholds",
+      "10. Document findings and risk assessment in file"
+    ],
+    "key_indicators": [
+      "500%+ velocity increase",
+      "New transaction types",
+      "Geolocation changes",
+      "New beneficiaries"
+    ],
+    "escalation_threshold": ">1000% velocity spike month-over-month",
+    "approval_authority": "Risk Committee",
+    "estimated_investigation_hours": 11,
+    "created_date": "2025-10-28T20:53:36.339014",
+    "sar_filing_likelihood": 0.8
+  },
+  {
+    "id": "playbook_010",
+    "scenario": "Trade-Based Money Laundering Suspicion",
+    "investigation_steps": [
+      "1. Compare invoice amount with market rates for similar goods/services",
+      "2. Identify if invoice >2x comparable market value (over-invoicing)",
+      "3. Verify if shipment actually occurred (tracking, customs documentation)",
+      "4. Confirm exporter/importer legitimate business history",
+      "5. Review payment terms for consistency with industry standards",
+      "6. Assess if goods appropriate for receiving country's economy/development",
+      "7. Verify bill of lading matches invoice and actual goods shipped",
+      "8. Check if similar invoicing pattern exists with other trading partners",
+      "9. If >30% invoice variance confirmed, file SAR for trade-based ML",
+      "10. Coordinate with OFAC/FinCEN if sanctioned country involvement"
+    ],
+    "key_indicators": [
+      "Invoice mismatch >30%",
+      "High-value goods to low-dev country",
+      "Multiple intermediaries"
+    ],
+    "escalation_threshold": "Any invoice variance >25% for international transactions >$100k",
+    "approval_authority": "Trade Finance Compliance",
+    "estimated_investigation_hours": 13,
+    "created_date": "2025-10-25T20:53:36.339026",
+    "sar_filing_likelihood": 0.94
+  },
+  {
+    "id": "playbook_011",
+    "scenario": "Sanctions List Hit",
+    "investigation_steps": [
+      "1. Confirm name match confidence level (90%+ vs manual review)",
+      "2. Cross-reference with multiple OFAC lists (SDN, HQ, Blocked List)",
+      "3. Check for exact name match vs. phonetic/potential false positive",
+      "4. Verify account opening date and historical transactions",
+      "5. Block account immediately to prevent further transactions",
+      "6. Freeze all assets and segregate into suspense account",
+      "7. File OFAC Blocking Report within 10 calendar days",
+      "8. Notify customer if account blocked (after legal review)",
+      "9. Report to FinCEN SAR within 30 days if proceeds involved"
+    ],
+    "key_indicators": [
+      "OFAC SDN match",
+      "High-risk jurisdiction origin",
+      "PEP identification"
+    ],
+    "escalation_threshold": "Sanctions list match = immediate block",
+    "approval_authority": "Legal/Compliance Officer",
+    "estimated_investigation_hours": 8,
+    "created_date": "2025-11-22T20:53:36.339037",
+    "sar_filing_likelihood": 0.6
+  },
+  {
+    "id": "playbook_012",
+    "scenario": "High-Value Wire to High-Risk Jurisdiction",
+    "investigation_steps": [
+      "1. Verify beneficiary identity and jurisdiction (check FATF black/grey list)",
+      "2. Confirm legitimate business purpose with customer (obtain written explanation)",
+      "3. Review invoice/documentation supporting claimed transaction purpose",
+      "4. Cross-reference beneficiary against OFAC/PEP databases",
+      "5. Assess account history for consistency with stated business",
+      "6. Verify beneficiary bank is not on high-risk institution list",
+      "7. Implement Enhanced Due Diligence (EDD) including source of funds verification",
+      "8. Obtain senior management approval for wire >$100k",
+      "9. Document decision with full file memo",
+      "10. Monitor beneficiary account for suspicious onward transfers"
+    ],
+    "key_indicators": [
+      "Wire >$50k",
+      "High-risk destination",
+      "No prior history",
+      "Mismatched business purpose"
+    ],
+    "escalation_threshold": "Wire >$250k to grey/black list country",
+    "approval_authority": "VP Risk Management",
+    "estimated_investigation_hours": 4,
+    "created_date": "2025-06-18T20:53:36.339069",
+    "sar_filing_likelihood": 0.47
+  },
+  {
+    "id": "playbook_013",
+    "scenario": "Structuring Detection",
+    "investigation_steps": [
+      "1. Verify transaction amounts are consistently below $10k CTR threshold",
+      "2. Check if deposits follow mathematical pattern (e.g., $9,900 repeated)",
+      "3. Identify source of funds via ID verification and beneficiary documentation",
+      "4. Review account for multiple related depositors or rapid account openings",
+      "5. Check if funds immediately transferred out to third parties",
+      "6. Pull transaction timeline for past 90-180 days to establish pattern",
+      "7. Interview account holder regarding deposit source and beneficiaries",
+      "8. File SAR if structuring intent confirmed (Recommendation 10 violation)"
+    ],
+    "key_indicators": [
+      "Round amounts",
+      "Multiple depositors",
+      "Immediate transfers out",
+      "CTR avoidance pattern"
+    ],
+    "escalation_threshold": "Pattern of 5+ transactions in 30 days below threshold",
+    "approval_authority": "Compliance Officer",
+    "estimated_investigation_hours": 4,
+    "created_date": "2025-06-08T20:53:36.339089",
+    "sar_filing_likelihood": 0.56
+  },
+  {
+    "id": "playbook_014",
+    "scenario": "Sanctions List Hit",
+    "investigation_steps": [
+      "1. Confirm name match confidence level (90%+ vs manual review)",
+      "2. Cross-reference with multiple OFAC lists (SDN, HQ, Blocked List)",
+      "3. Check for exact name match vs. phonetic/potential false positive",
+      "4. Verify account opening date and historical transactions",
+      "5. Block account immediately to prevent further transactions",
+      "6. Freeze all assets and segregate into suspense account",
+      "7. File OFAC Blocking Report within 10 calendar days",
+      "8. Notify customer if account blocked (after legal review)",
+      "9. Report to FinCEN SAR within 30 days if proceeds involved"
+    ],
+    "key_indicators": [
+      "OFAC SDN match",
+      "High-risk jurisdiction origin",
+      "PEP identification"
+    ],
+    "escalation_threshold": "Sanctions list match = immediate block",
+    "approval_authority": "Legal/Compliance Officer",
+    "estimated_investigation_hours": 14,
+    "created_date": "2025-07-10T20:53:36.339103",
+    "sar_filing_likelihood": 0.46
+  },
+  {
+    "id": "playbook_015",
+    "scenario": "Structuring Detection",
+    "investigation_steps": [
+      "1. Verify transaction amounts are consistently below $10k CTR threshold",
+      "2. Check if deposits follow mathematical pattern (e.g., $9,900 repeated)",
+      "3. Identify source of funds via ID verification and beneficiary documentation",
+      "4. Review account for multiple related depositors or rapid account openings",
+      "5. Check if funds immediately transferred out to third parties",
+      "6. Pull transaction timeline for past 90-180 days to establish pattern",
+      "7. Interview account holder regarding deposit source and beneficiaries",
+      "8. File SAR if structuring intent confirmed (Recommendation 10 violation)"
+    ],
+    "key_indicators": [
+      "Round amounts",
+      "Multiple depositors",
+      "Immediate transfers out",
+      "CTR avoidance pattern"
+    ],
+    "escalation_threshold": "Pattern of 5+ transactions in 30 days below threshold",
+    "approval_authority": "Compliance Officer",
+    "estimated_investigation_hours": 13,
+    "created_date": "2025-10-24T20:53:36.339112",
+    "sar_filing_likelihood": 0.66
+  },
+  {
+    "id": "playbook_016",
+    "scenario": "Dormant Account Activation",
+    "investigation_steps": [
+      "1. Confirm account has been dormant >6 months with no transactions",
+      "2. Review login patterns for geolocation changes immediately prior to withdrawal",
+      "3. Verify if credentials were reset or email address changed recently",
+      "4. Check for new beneficiaries added to account within 30 days of reactivation",
+      "5. Assess if transaction amount is anomalous relative to historical avg",
+      "6. Contact account holder to confirm legitimate business purpose",
+      "7. If unable to verify ownership, implement re-KYC process",
+      "8. Flag for fraud investigation if indicators of account compromise detected",
+      "9. If confirmed fraud, freeze account and report to law enforcement"
+    ],
+    "key_indicators": [
+      "6+ months inactivity",
+      "Geolocation anomaly",
+      "New beneficiary",
+      "Large withdrawal"
+    ],
+    "escalation_threshold": "Any withdrawal >$50k after 12+ month dormancy",
+    "approval_authority": "Fraud Investigation Team",
+    "estimated_investigation_hours": 9,
+    "created_date": "2025-12-14T20:53:36.339120",
+    "sar_filing_likelihood": 0.93
+  },
+  {
+    "id": "playbook_017",
+    "scenario": "High-Value Wire to High-Risk Jurisdiction",
+    "investigation_steps": [
+      "1. Verify beneficiary identity and jurisdiction (check FATF black/grey list)",
+      "2. Confirm legitimate business purpose with customer (obtain written explanation)",
+      "3. Review invoice/documentation supporting claimed transaction purpose",
+      "4. Cross-reference beneficiary against OFAC/PEP databases",
+      "5. Assess account history for consistency with stated business",
+      "6. Verify beneficiary bank is not on high-risk institution list",
+      "7. Implement Enhanced Due Diligence (EDD) including source of funds verification",
+      "8. Obtain senior management approval for wire >$100k",
+      "9. Document decision with full file memo",
+      "10. Monitor beneficiary account for suspicious onward transfers"
+    ],
+    "key_indicators": [
+      "Wire >$50k",
+      "High-risk destination",
+      "No prior history",
+      "Mismatched business purpose"
+    ],
+    "escalation_threshold": "Wire >$250k to grey/black list country",
+    "approval_authority": "VP Risk Management",
+    "estimated_investigation_hours": 11,
+    "created_date": "2026-01-19T20:53:36.339128",
+    "sar_filing_likelihood": 0.85
+  },
+  {
+    "id": "playbook_018",
+    "scenario": "Dormant Account Activation",
+    "investigation_steps": [
+      "1. Confirm account has been dormant >6 months with no transactions",
+      "2. Review login patterns for geolocation changes immediately prior to withdrawal",
+      "3. Verify if credentials were reset or email address changed recently",
+      "4. Check for new beneficiaries added to account within 30 days of reactivation",
+      "5. Assess if transaction amount is anomalous relative to historical avg",
+      "6. Contact account holder to confirm legitimate business purpose",
+      "7. If unable to verify ownership, implement re-KYC process",
+      "8. Flag for fraud investigation if indicators of account compromise detected",
+      "9. If confirmed fraud, freeze account and report to law enforcement"
+    ],
+    "key_indicators": [
+      "6+ months inactivity",
+      "Geolocation anomaly",
+      "New beneficiary",
+      "Large withdrawal"
+    ],
+    "escalation_threshold": "Any withdrawal >$50k after 12+ month dormancy",
+    "approval_authority": "Fraud Investigation Team",
+    "estimated_investigation_hours": 11,
+    "created_date": "2026-02-09T20:53:36.339136",
+    "sar_filing_likelihood": 0.72
+  },
+  {
+    "id": "playbook_019",
+    "scenario": "Unusual Transaction Velocity",
+    "investigation_steps": [
+      "1. Establish baseline: calculate average transactions/month for past 12 months",
+      "2. Identify spike: current velocity vs. baseline (flag if >300% increase)",
+      "3. Categorize transaction types: are new types appearing (e.g., international)?",
+      "4. Review beneficiary patterns: new payees appearing? Concentration vs. diversification?",
+      "5. Assess account funding: any new deposit patterns or large inbound transfers?",
+      "6. Check if velocity spike correlates with account changes (new signers, owner changes)",
+      "7. Contact account holder for business explanation of activity increase",
+      "8. If business explanation inconsistent with account activity, escalate",
+      "9. Implement enhanced monitoring: daily alert thresholds",
+      "10. Document findings and risk assessment in file"
+    ],
+    "key_indicators": [
+      "500%+ velocity increase",
+      "New transaction types",
+      "Geolocation changes",
+      "New beneficiaries"
+    ],
+    "escalation_threshold": ">1000% velocity spike month-over-month",
+    "approval_authority": "Risk Committee",
+    "estimated_investigation_hours": 4,
+    "created_date": "2025-12-31T20:53:36.339144",
+    "sar_filing_likelihood": 0.48
+  },
+  {
+    "id": "playbook_020",
+    "scenario": "Trade-Based Money Laundering Suspicion",
+    "investigation_steps": [
+      "1. Compare invoice amount with market rates for similar goods/services",
+      "2. Identify if invoice >2x comparable market value (over-invoicing)",
+      "3. Verify if shipment actually occurred (tracking, customs documentation)",
+      "4. Confirm exporter/importer legitimate business history",
+      "5. Review payment terms for consistency with industry standards",
+      "6. Assess if goods appropriate for receiving country's economy/development",
+      "7. Verify bill of lading matches invoice and actual goods shipped",
+      "8. Check if similar invoicing pattern exists with other trading partners",
+      "9. If >30% invoice variance confirmed, file SAR for trade-based ML",
+      "10. Coordinate with OFAC/FinCEN if sanctioned country involvement"
+    ],
+    "key_indicators": [
+      "Invoice mismatch >30%",
+      "High-value goods to low-dev country",
+      "Multiple intermediaries"
+    ],
+    "escalation_threshold": "Any invoice variance >25% for international transactions >$100k",
+    "approval_authority": "Trade Finance Compliance",
+    "estimated_investigation_hours": 8,
+    "created_date": "2026-02-03T20:53:36.339152",
+    "sar_filing_likelihood": 0.95
+  }
+]

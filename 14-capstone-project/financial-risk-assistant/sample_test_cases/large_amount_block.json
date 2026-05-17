@@ -1,0 +1,15 @@
+{
+  "case_id": "SAMPLE-HIGH-001",
+  "customer_id": "CUST-R3S4T5U6",
+  "transaction_amount": 75000,
+  "transaction_type": "transfer",
+  "channel": "online",
+  "device_location": "US",
+  "customer_profile": {
+    "account_age_days": 365,
+    "avg_monthly_volume": 12000,
+    "previous_txn_count": 45,
+    "country_of_residence": "US"
+  },
+  "description": "Large amount transfer ($75k) - triggers hard policy gate for blocking >= $50k"
+}

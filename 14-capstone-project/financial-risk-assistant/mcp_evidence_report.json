@@ -1,0 +1,166 @@
+{
+  "generated_at_utc": "2026-05-17T15:56:37.774676+00:00",
+  "mode": "live",
+  "summary": {
+    "entity_count": 3,
+    "country_count": 3
+  },
+  "sanctions_checks": [
+    {
+      "entity": "Vladimir Putin",
+      "result": {
+        "status": "found",
+        "entity_name": "Vladimir Putin",
+        "entity_type": "person",
+        "lists": [
+          "OFAC SDN"
+        ],
+        "confidence": 1.0,
+        "matched_name": "putin  vladimir vladimirovich",
+        "reason": "OFAC SDN token match"
+      }
+    },
+    {
+      "entity": "John Smith",
+      "result": {
+        "status": "not_found",
+        "entity_name": "John Smith",
+        "entity_type": "person",
+        "lists": [],
+        "confidence": 0.5,
+        "matched_name": "",
+        "reason": "OFAC SDN token match"
+      }
+    },
+    {
+      "entity": "Acme Trading LLC",
+      "result": {
+        "status": "not_found",
+        "entity_name": "Acme Trading LLC",
+        "entity_type": "person",
+        "lists": [],
+        "confidence": 0.67,
+        "matched_name": "",
+        "reason": "OFAC SDN token match"
+      }
+    }
+  ],
+  "adverse_media_checks": [
+    {
+      "entity": "Vladimir Putin",
+      "result": {
+        "entity_name": "Vladimir Putin",
+        "mentions_found": 15,
+        "severity": "high",
+        "sources": [
+          "Swiss bank employees indicted in connection to Russia president’s vast fortunes - International Consortium of Investigative Journalists - ICIJ",
+          "Report: The impact of Western sanctions on Russia and how they can be made even more effective - Atlantic Council",
+          "Putin foe: Ohio’s Vance is repeating Kremlin talking points on sanctions - Ohio Capital Journal",
+          "Navalny’s anti-corruption group urges Congress to place sanctions on 6,000 of Putin’s midlevel cronies. - The New York Times",
+          "Following the Money: Trump and Russia-Linked Transactions From the Campaign to the Presidential Inauguration - Center for American Progress"
+        ],
+        "last_scan": "live",
+        "keyword_hits": 11,
+        "reason": "Google News RSS risk-keyword scan"
+      }
+    },
+    {
+      "entity": "John Smith",
+      "result": {
+        "entity_name": "John Smith",
+        "mentions_found": 14,
+        "severity": "high",
+        "sources": [
+          "Keywords in Adverse Media and Negative News Research - ComplyAdvantage",
+          "Member of Thug Riders gang learns punishment for admitting to organized crime charges - WHIO TV",
+          "Former Rep. Robin Smith sentenced to 8 months in federal prison for role in corruption conspiracy - Tennessee Lookout",
+          "‘Baseless fraud theory’: Judge rules against Cottonwood Law in Big Sky water lawsuit - Explore Big Sky",
+          "How Jack Smith May Charge Trump PAC with Fraudulent Fundraising Within the Bounds of First Amendment - Just Security"
+        ],
+        "last_scan": "live",
+        "keyword_hits": 8,
+        "reason": "Google News RSS risk-keyword scan"
+      }
+    },
+    {
+      "entity": "Acme Trading LLC",
+      "result": {
+        "entity_name": "Acme Trading LLC",
+        "mentions_found": 2,
+        "severity": "low",
+        "sources": [
+          "SC Upholds ₹15 Lakh SEBI Penalties for Riddhi Siddhi Gluco Biols - Whalesbook",
+          "'We lost Dh39 million': Dubai expat reveals BlueChip owner used another firm to scam investors - Khaleej Times"
+        ],
+        "last_scan": "live",
+        "keyword_hits": 0,
+        "reason": "Google News RSS risk-keyword scan"
+      }
+    }
+  ],
+  "country_risk_checks": [
+    {
+      "country": "KZ",
+      "result": {
+        "country": "KZ",
+        "risk_score": 0.35,
+        "reason": "World Bank income-level prior (UMC)",
+        "merchant_category": null,
+        "last_updated": "live",
+        "external_signals": {
+          "world_bank": {
+            "income_level": "UMC",
+            "lending_type": "IBD"
+          },
+          "fx": {
+            "base": "USD",
+            "quote_value": 468.874851,
+            "provider": "open.er-api.com"
+          }
+        }
+      }
+    },
+    {
+      "country": "RU",
+      "result": {
+        "country": "RU",
+        "risk_score": 0.85,
+        "reason": "High-risk jurisdiction override",
+        "merchant_category": null,
+        "last_updated": "live",
+        "external_signals": {
+          "world_bank": {
+            "income_level": "HIC",
+            "lending_type": "IBD"
+          },
+          "fx": {
+            "base": "USD",
+            "quote_value": null,
+            "provider": "open.er-api.com"
+          }
+        }
+      }
+    },
+    {
+      "country": "IR",
+      "result": {
+        "country": "IR",
+        "risk_score": 0.9,
+        "reason": "High-risk jurisdiction override",
+        "merchant_category": null,
+        "last_updated": "live",
+        "external_signals": {
+          "world_bank": {
+            "income_level": "UMC",
+            "lending_type": "IBD"
+          },
+          "fx": {
+            "base": "USD",
+            "quote_value": null,
+            "provider": "open.er-api.com"
+          }
+        }
+      }
+    }
+  ]
+}

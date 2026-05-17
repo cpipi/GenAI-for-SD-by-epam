@@ -1,0 +1,1536 @@
+{
+  "summary": {
+    "cases_evaluated": 25,
+    "rerank_status_counts": {
+      "claude_success": 25
+    },
+    "sample_error": ""
+  },
+  "cases": [
+    {
+      "case_id": "test_approve_001",
+      "expected_decision": "approve",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3667
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3667
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3667
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3667
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_approve_002",
+      "expected_decision": "approve",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_approve_003",
+      "expected_decision": "approve",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3667
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3667
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3667
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3667
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_approve_004",
+      "expected_decision": "approve",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.37
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.37
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.37
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.37
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.37
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.37
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_approve_005",
+      "expected_decision": "approve",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_approve_006",
+      "expected_decision": "approve",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_approve_007",
+      "expected_decision": "approve",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_approve_008",
+      "expected_decision": "approve",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_approve_009",
+      "expected_decision": "approve",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3706
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_approve_010",
+      "expected_decision": "approve",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_approve_011",
+      "expected_decision": "approve",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3683
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_approve_012",
+      "expected_decision": "approve",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3695
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_review_013",
+      "expected_decision": "manual_review",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3678
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_review_014",
+      "expected_decision": "manual_review",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_review_015",
+      "expected_decision": "manual_review",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_review_016",
+      "expected_decision": "manual_review",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3689
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_review_017",
+      "expected_decision": "manual_review",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3694
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3694
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3694
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3694
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3694
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3694
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3694
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3694
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3694
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3694
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_block_018",
+      "expected_decision": "block",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3904
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "sanctions_policy",
+          "score": 0.3502
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3904
+        },
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3427
+        },
+        {
+          "source": "policy",
+          "type": "sanctions_policy",
+          "score": 0.3502
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3711
+        }
+      ],
+      "top1_changed": true,
+      "top5_order_changed": true
+    },
+    {
+      "case_id": "test_block_019",
+      "expected_decision": "block",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3626
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3626
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3626
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3626
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.362
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3626
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3626
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3626
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3626
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.362
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_block_020",
+      "expected_decision": "block",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3876
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3876
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "sanctions_policy",
+          "score": 0.3497
+        },
+        {
+          "source": "policy",
+          "type": "transaction_limits",
+          "score": 0.3482
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "sanctions_policy",
+          "score": 0.3491
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": true
+    },
+    {
+      "case_id": "test_block_021",
+      "expected_decision": "block",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3854
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3854
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3854
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3854
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3672
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3854
+        },
+        {
+          "source": "policy",
+          "type": "sanctions_policy",
+          "score": 0.348
+        },
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3415
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3854
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3854
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": true
+    },
+    {
+      "case_id": "test_block_022",
+      "expected_decision": "block",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3876
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3876
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "sanctions_policy",
+          "score": 0.3491
+        },
+        {
+          "source": "policy",
+          "type": "transaction_limits",
+          "score": 0.3488
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "sanctions_policy",
+          "score": 0.3491
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": true
+    },
+    {
+      "case_id": "test_block_023",
+      "expected_decision": "block",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3802
+        },
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3802
+        },
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3802
+        },
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3802
+        },
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3802
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3795
+        },
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3795
+        },
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3795
+        },
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3795
+        },
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3795
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": false
+    },
+    {
+      "case_id": "test_block_024",
+      "expected_decision": "block",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3904
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3722
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3716
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3716
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3716
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "sanctions_policy",
+          "score": 0.3502
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3904
+        },
+        {
+          "source": "risk_pattern",
+          "type": "trade_based_ml",
+          "score": 0.3427
+        },
+        {
+          "source": "policy",
+          "type": "sanctions_policy",
+          "score": 0.3502
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3722
+        }
+      ],
+      "top1_changed": true,
+      "top5_order_changed": true
+    },
+    {
+      "case_id": "test_block_025",
+      "expected_decision": "block",
+      "rerank_status": "claude_success",
+      "local_only_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3876
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.3876
+        }
+      ],
+      "claude_rerank_top5": [
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "sanctions_policy",
+          "score": 0.3491
+        },
+        {
+          "source": "policy",
+          "type": "transaction_limits",
+          "score": 0.3469
+        },
+        {
+          "source": "policy",
+          "type": "aml_policy",
+          "score": 0.4064
+        },
+        {
+          "source": "policy",
+          "type": "sanctions_policy",
+          "score": 0.3491
+        }
+      ],
+      "top1_changed": false,
+      "top5_order_changed": true
+    }
+  ]
+}

@@ -1,0 +1,916 @@
+[
+  {
+    "id": "policy_001",
+    "type": "aml_policy",
+    "title": "Group Anti-Money Laundering (AML) Policy and Compliance Framework",
+    "content": "This policy establishes the Bank's commitment to combating money laundering, terrorist financing, and sanctions violations in accordance with the Bank Secrecy Act (BSA), AML Act, OFAC regulations, and FATF Recommendations. All employees must complete annual AML training. Suspicious activities must be reported via SAR within 30 days. Transaction monitoring systems screen all deposits >$10k, wire transfers >$5k, and unusual patterns. Enhanced due diligence (EDD) required for PEPs, high-risk jurisdictions, and beneficial owners from countries on OFAC/FATF lists.",
+    "effective_date": "2025-06-21T20:53:36.332529",
+    "last_reviewed": "2026-02-19T20:53:36.332557",
+    "version": "v3.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "sar_filing": "$10,000+",
+      "ctr_reporting": "$10,000+",
+      "cdd_review": "All new accounts"
+    },
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_002",
+    "type": "kyc_guidelines",
+    "title": "Enhanced Know Your Customer (KYC) & Customer Due Diligence (CDD) Standards",
+    "content": "All customers undergo KYC verification before account opening. For individuals: government-issued ID, address verification, beneficial ownership confirmation. For entities: corporate registration, bylaws, beneficial owner list (BO certification), source of funds documentation. Enhanced Due Diligence (EDD) required for: PEPs (Politically Exposed Persons), customers from high-risk jurisdictions (FATF grey/black list), cash-intensive businesses, high net worth individuals (>$5M). Ongoing monitoring: quarterly review of high-risk customers, annual review of medium-risk, biennial review of low-risk.",
+    "effective_date": "2025-09-19T20:53:36.332592",
+    "last_reviewed": "2026-05-13T20:53:36.332606",
+    "version": "v2.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_003",
+    "type": "high_risk_jurisdictions",
+    "title": "High-Risk Jurisdiction Watchlist and Country-Based Screening",
+    "content": "Countries classified as high-risk require enhanced screening and monitoring: FATF Black List (North Korea, Iran), FATF Grey List (actively monitored countries), OFAC SDN countries (Russia, Syria, Cuba). Additional scrutiny for: countries with weak AML/CFT regimes, countries with significant corruption, countries known for sanctions evasion. Transactions involving these jurisdictions: mandatory EDD, management override required, SAR filing if proceeds suspected illicit. Monthly review of new additions to sanctions lists.",
+    "effective_date": "2024-06-01T20:53:36.332640",
+    "last_reviewed": "2026-05-07T20:53:36.332651",
+    "version": "v3.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_004",
+    "type": "sanctions_policy",
+    "title": "OFAC Sanctions Screening & Compliance Program",
+    "content": "All customers, beneficiaries, and related parties screened against OFAC SDN list at account opening and daily during active periods. Screening includes: exact name match, phonetic match (90%+ threshold), name variants, common aliases. Hits require manual review: confirm false positive or initiate blocking. Confirmed sanctions hits: block transaction immediately, freeze account, file Blocking Report within 10 days. Monthly OFAC list updates downloaded and integrated into screening database. Staff training on OFAC compliance required annually.",
+    "effective_date": "2024-07-07T20:53:36.332670",
+    "last_reviewed": "2026-04-22T20:53:36.332680",
+    "version": "v4.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_005",
+    "type": "high_risk_jurisdictions",
+    "title": "High-Risk Jurisdiction Watchlist and Country-Based Screening",
+    "content": "Countries classified as high-risk require enhanced screening and monitoring: FATF Black List (North Korea, Iran), FATF Grey List (actively monitored countries), OFAC SDN countries (Russia, Syria, Cuba). Additional scrutiny for: countries with weak AML/CFT regimes, countries with significant corruption, countries known for sanctions evasion. Transactions involving these jurisdictions: mandatory EDD, management override required, SAR filing if proceeds suspected illicit. Monthly review of new additions to sanctions lists.",
+    "effective_date": "2025-01-03T20:53:36.332698",
+    "last_reviewed": "2026-04-15T20:53:36.332709",
+    "version": "v2.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_006",
+    "type": "aml_policy",
+    "title": "Group Anti-Money Laundering (AML) Policy and Compliance Framework",
+    "content": "This policy establishes the Bank's commitment to combating money laundering, terrorist financing, and sanctions violations in accordance with the Bank Secrecy Act (BSA), AML Act, OFAC regulations, and FATF Recommendations. All employees must complete annual AML training. Suspicious activities must be reported via SAR within 30 days. Transaction monitoring systems screen all deposits >$10k, wire transfers >$5k, and unusual patterns. Enhanced due diligence (EDD) required for PEPs, high-risk jurisdictions, and beneficial owners from countries on OFAC/FATF lists.",
+    "effective_date": "2024-12-08T20:53:36.332728",
+    "last_reviewed": "2026-04-18T20:53:36.332737",
+    "version": "v2.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "sar_filing": "$10,000+",
+      "ctr_reporting": "$10,000+",
+      "cdd_review": "All new accounts"
+    },
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_007",
+    "type": "aml_policy",
+    "title": "Group Anti-Money Laundering (AML) Policy and Compliance Framework",
+    "content": "This policy establishes the Bank's commitment to combating money laundering, terrorist financing, and sanctions violations in accordance with the Bank Secrecy Act (BSA), AML Act, OFAC regulations, and FATF Recommendations. All employees must complete annual AML training. Suspicious activities must be reported via SAR within 30 days. Transaction monitoring systems screen all deposits >$10k, wire transfers >$5k, and unusual patterns. Enhanced due diligence (EDD) required for PEPs, high-risk jurisdictions, and beneficial owners from countries on OFAC/FATF lists.",
+    "effective_date": "2024-07-26T20:53:36.332755",
+    "last_reviewed": "2026-04-15T20:53:36.332764",
+    "version": "v2.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "sar_filing": "$10,000+",
+      "ctr_reporting": "$10,000+",
+      "cdd_review": "All new accounts"
+    },
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_008",
+    "type": "kyc_guidelines",
+    "title": "Enhanced Know Your Customer (KYC) & Customer Due Diligence (CDD) Standards",
+    "content": "All customers undergo KYC verification before account opening. For individuals: government-issued ID, address verification, beneficial ownership confirmation. For entities: corporate registration, bylaws, beneficial owner list (BO certification), source of funds documentation. Enhanced Due Diligence (EDD) required for: PEPs (Politically Exposed Persons), customers from high-risk jurisdictions (FATF grey/black list), cash-intensive businesses, high net worth individuals (>$5M). Ongoing monitoring: quarterly review of high-risk customers, annual review of medium-risk, biennial review of low-risk.",
+    "effective_date": "2024-10-29T20:53:36.332780",
+    "last_reviewed": "2026-02-20T20:53:36.332790",
+    "version": "v4.2",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_009",
+    "type": "high_risk_jurisdictions",
+    "title": "High-Risk Jurisdiction Watchlist and Country-Based Screening",
+    "content": "Countries classified as high-risk require enhanced screening and monitoring: FATF Black List (North Korea, Iran), FATF Grey List (actively monitored countries), OFAC SDN countries (Russia, Syria, Cuba). Additional scrutiny for: countries with weak AML/CFT regimes, countries with significant corruption, countries known for sanctions evasion. Transactions involving these jurisdictions: mandatory EDD, management override required, SAR filing if proceeds suspected illicit. Monthly review of new additions to sanctions lists.",
+    "effective_date": "2024-05-30T20:53:36.332809",
+    "last_reviewed": "2026-03-13T20:53:36.332819",
+    "version": "v3.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_010",
+    "type": "kyc_guidelines",
+    "title": "Enhanced Know Your Customer (KYC) & Customer Due Diligence (CDD) Standards",
+    "content": "All customers undergo KYC verification before account opening. For individuals: government-issued ID, address verification, beneficial ownership confirmation. For entities: corporate registration, bylaws, beneficial owner list (BO certification), source of funds documentation. Enhanced Due Diligence (EDD) required for: PEPs (Politically Exposed Persons), customers from high-risk jurisdictions (FATF grey/black list), cash-intensive businesses, high net worth individuals (>$5M). Ongoing monitoring: quarterly review of high-risk customers, annual review of medium-risk, biennial review of low-risk.",
+    "effective_date": "2024-10-18T20:53:36.332838",
+    "last_reviewed": "2026-03-20T20:53:36.332847",
+    "version": "v3.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_011",
+    "type": "sanctions_policy",
+    "title": "OFAC Sanctions Screening & Compliance Program",
+    "content": "All customers, beneficiaries, and related parties screened against OFAC SDN list at account opening and daily during active periods. Screening includes: exact name match, phonetic match (90%+ threshold), name variants, common aliases. Hits require manual review: confirm false positive or initiate blocking. Confirmed sanctions hits: block transaction immediately, freeze account, file Blocking Report within 10 days. Monthly OFAC list updates downloaded and integrated into screening database. Staff training on OFAC compliance required annually.",
+    "effective_date": "2025-05-09T20:53:36.332901",
+    "last_reviewed": "2026-03-11T20:53:36.332913",
+    "version": "v3.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_012",
+    "type": "transaction_limits",
+    "title": "Transaction Amount and Frequency Thresholds",
+    "content": "Domestic transfers: Individual limit $100k/day, $500k/month unless enhanced verification provided. Wire transfers: $50k+ requires management approval, >$250k requires C-level approval and EDD. International wires to high-risk jurisdictions: $10k+ limit, all subject to OFAC screening. ATM withdrawals: $5k/day limit, daily aggregate $20k. Multiple transactions in 24hrs totaling >$50k trigger structuring review. Round amounts >3 times in 30 days trigger compliance alert.",
+    "effective_date": "2024-11-23T20:53:36.332934",
+    "last_reviewed": "2026-05-07T20:53:36.332957",
+    "version": "v4.2",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "domestic_daily": "$100k",
+      "international_daily": "$25k",
+      "atm_daily": "$5k"
+    },
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_013",
+    "type": "kyc_guidelines",
+    "title": "Enhanced Know Your Customer (KYC) & Customer Due Diligence (CDD) Standards",
+    "content": "All customers undergo KYC verification before account opening. For individuals: government-issued ID, address verification, beneficial ownership confirmation. For entities: corporate registration, bylaws, beneficial owner list (BO certification), source of funds documentation. Enhanced Due Diligence (EDD) required for: PEPs (Politically Exposed Persons), customers from high-risk jurisdictions (FATF grey/black list), cash-intensive businesses, high net worth individuals (>$5M). Ongoing monitoring: quarterly review of high-risk customers, annual review of medium-risk, biennial review of low-risk.",
+    "effective_date": "2025-05-14T20:53:36.332975",
+    "last_reviewed": "2026-04-04T20:53:36.332984",
+    "version": "v3.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_014",
+    "type": "kyc_guidelines",
+    "title": "Enhanced Know Your Customer (KYC) & Customer Due Diligence (CDD) Standards",
+    "content": "All customers undergo KYC verification before account opening. For individuals: government-issued ID, address verification, beneficial ownership confirmation. For entities: corporate registration, bylaws, beneficial owner list (BO certification), source of funds documentation. Enhanced Due Diligence (EDD) required for: PEPs (Politically Exposed Persons), customers from high-risk jurisdictions (FATF grey/black list), cash-intensive businesses, high net worth individuals (>$5M). Ongoing monitoring: quarterly review of high-risk customers, annual review of medium-risk, biennial review of low-risk.",
+    "effective_date": "2025-09-15T20:53:36.333006",
+    "last_reviewed": "2026-04-17T20:53:36.333015",
+    "version": "v3.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_015",
+    "type": "sanctions_policy",
+    "title": "OFAC Sanctions Screening & Compliance Program",
+    "content": "All customers, beneficiaries, and related parties screened against OFAC SDN list at account opening and daily during active periods. Screening includes: exact name match, phonetic match (90%+ threshold), name variants, common aliases. Hits require manual review: confirm false positive or initiate blocking. Confirmed sanctions hits: block transaction immediately, freeze account, file Blocking Report within 10 days. Monthly OFAC list updates downloaded and integrated into screening database. Staff training on OFAC compliance required annually.",
+    "effective_date": "2025-07-12T20:53:36.333032",
+    "last_reviewed": "2026-05-08T20:53:36.333042",
+    "version": "v3.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_016",
+    "type": "transaction_limits",
+    "title": "Transaction Amount and Frequency Thresholds",
+    "content": "Domestic transfers: Individual limit $100k/day, $500k/month unless enhanced verification provided. Wire transfers: $50k+ requires management approval, >$250k requires C-level approval and EDD. International wires to high-risk jurisdictions: $10k+ limit, all subject to OFAC screening. ATM withdrawals: $5k/day limit, daily aggregate $20k. Multiple transactions in 24hrs totaling >$50k trigger structuring review. Round amounts >3 times in 30 days trigger compliance alert.",
+    "effective_date": "2024-08-10T20:53:36.333058",
+    "last_reviewed": "2026-03-18T20:53:36.333068",
+    "version": "v3.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "domestic_daily": "$100k",
+      "international_daily": "$25k",
+      "atm_daily": "$5k"
+    },
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_017",
+    "type": "kyc_guidelines",
+    "title": "Enhanced Know Your Customer (KYC) & Customer Due Diligence (CDD) Standards",
+    "content": "All customers undergo KYC verification before account opening. For individuals: government-issued ID, address verification, beneficial ownership confirmation. For entities: corporate registration, bylaws, beneficial owner list (BO certification), source of funds documentation. Enhanced Due Diligence (EDD) required for: PEPs (Politically Exposed Persons), customers from high-risk jurisdictions (FATF grey/black list), cash-intensive businesses, high net worth individuals (>$5M). Ongoing monitoring: quarterly review of high-risk customers, annual review of medium-risk, biennial review of low-risk.",
+    "effective_date": "2024-12-13T20:53:36.333085",
+    "last_reviewed": "2026-03-28T20:53:36.333094",
+    "version": "v4.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_018",
+    "type": "escalation_procedures",
+    "title": "Case Escalation Decision Framework and Approval Workflows",
+    "content": "Risk scores 0.0-0.3: APPROVE (standard processing). Risk scores 0.3-0.6: MANUAL_REVIEW (escalate to Risk Committee). Risk scores 0.6-1.0: BLOCK/SAR FILE (escalate to Compliance Officer, notify OFAC). Hard gates override: Sanctions hits = BLOCK immediately, CTR >$100k = mandatory SAR, Structuring pattern = BLOCK + SAR. Approval authority: Risk Analyst (escalate), Risk Committee (>$50k or >0.5 risk), Compliance Officer (SAR decisions), Legal Counsel (regulatory exposure >$1M). All blocks documented within 2 business days.",
+    "effective_date": "2025-01-23T20:53:36.333113",
+    "last_reviewed": "2026-03-16T20:53:36.333123",
+    "version": "v2.2",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_019",
+    "type": "transaction_limits",
+    "title": "Transaction Amount and Frequency Thresholds",
+    "content": "Domestic transfers: Individual limit $100k/day, $500k/month unless enhanced verification provided. Wire transfers: $50k+ requires management approval, >$250k requires C-level approval and EDD. International wires to high-risk jurisdictions: $10k+ limit, all subject to OFAC screening. ATM withdrawals: $5k/day limit, daily aggregate $20k. Multiple transactions in 24hrs totaling >$50k trigger structuring review. Round amounts >3 times in 30 days trigger compliance alert.",
+    "effective_date": "2025-01-13T20:53:36.333140",
+    "last_reviewed": "2026-03-24T20:53:36.333150",
+    "version": "v4.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "domestic_daily": "$100k",
+      "international_daily": "$25k",
+      "atm_daily": "$5k"
+    },
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_020",
+    "type": "high_risk_jurisdictions",
+    "title": "High-Risk Jurisdiction Watchlist and Country-Based Screening",
+    "content": "Countries classified as high-risk require enhanced screening and monitoring: FATF Black List (North Korea, Iran), FATF Grey List (actively monitored countries), OFAC SDN countries (Russia, Syria, Cuba). Additional scrutiny for: countries with weak AML/CFT regimes, countries with significant corruption, countries known for sanctions evasion. Transactions involving these jurisdictions: mandatory EDD, management override required, SAR filing if proceeds suspected illicit. Monthly review of new additions to sanctions lists.",
+    "effective_date": "2025-07-07T20:53:36.333170",
+    "last_reviewed": "2026-04-12T20:53:36.333180",
+    "version": "v3.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_021",
+    "type": "aml_policy",
+    "title": "Group Anti-Money Laundering (AML) Policy and Compliance Framework",
+    "content": "This policy establishes the Bank's commitment to combating money laundering, terrorist financing, and sanctions violations in accordance with the Bank Secrecy Act (BSA), AML Act, OFAC regulations, and FATF Recommendations. All employees must complete annual AML training. Suspicious activities must be reported via SAR within 30 days. Transaction monitoring systems screen all deposits >$10k, wire transfers >$5k, and unusual patterns. Enhanced due diligence (EDD) required for PEPs, high-risk jurisdictions, and beneficial owners from countries on OFAC/FATF lists.",
+    "effective_date": "2025-01-14T20:53:36.333197",
+    "last_reviewed": "2026-04-03T20:53:36.333207",
+    "version": "v4.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "sar_filing": "$10,000+",
+      "ctr_reporting": "$10,000+",
+      "cdd_review": "All new accounts"
+    },
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_022",
+    "type": "sanctions_policy",
+    "title": "OFAC Sanctions Screening & Compliance Program",
+    "content": "All customers, beneficiaries, and related parties screened against OFAC SDN list at account opening and daily during active periods. Screening includes: exact name match, phonetic match (90%+ threshold), name variants, common aliases. Hits require manual review: confirm false positive or initiate blocking. Confirmed sanctions hits: block transaction immediately, freeze account, file Blocking Report within 10 days. Monthly OFAC list updates downloaded and integrated into screening database. Staff training on OFAC compliance required annually.",
+    "effective_date": "2025-08-31T20:53:36.333224",
+    "last_reviewed": "2026-03-18T20:53:36.333234",
+    "version": "v2.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_023",
+    "type": "high_risk_jurisdictions",
+    "title": "High-Risk Jurisdiction Watchlist and Country-Based Screening",
+    "content": "Countries classified as high-risk require enhanced screening and monitoring: FATF Black List (North Korea, Iran), FATF Grey List (actively monitored countries), OFAC SDN countries (Russia, Syria, Cuba). Additional scrutiny for: countries with weak AML/CFT regimes, countries with significant corruption, countries known for sanctions evasion. Transactions involving these jurisdictions: mandatory EDD, management override required, SAR filing if proceeds suspected illicit. Monthly review of new additions to sanctions lists.",
+    "effective_date": "2024-06-20T20:53:36.333252",
+    "last_reviewed": "2026-03-05T20:53:36.333262",
+    "version": "v4.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_024",
+    "type": "aml_policy",
+    "title": "Group Anti-Money Laundering (AML) Policy and Compliance Framework",
+    "content": "This policy establishes the Bank's commitment to combating money laundering, terrorist financing, and sanctions violations in accordance with the Bank Secrecy Act (BSA), AML Act, OFAC regulations, and FATF Recommendations. All employees must complete annual AML training. Suspicious activities must be reported via SAR within 30 days. Transaction monitoring systems screen all deposits >$10k, wire transfers >$5k, and unusual patterns. Enhanced due diligence (EDD) required for PEPs, high-risk jurisdictions, and beneficial owners from countries on OFAC/FATF lists.",
+    "effective_date": "2024-12-05T20:53:36.333282",
+    "last_reviewed": "2026-04-29T20:53:36.333292",
+    "version": "v3.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "sar_filing": "$10,000+",
+      "ctr_reporting": "$10,000+",
+      "cdd_review": "All new accounts"
+    },
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_025",
+    "type": "aml_policy",
+    "title": "Group Anti-Money Laundering (AML) Policy and Compliance Framework",
+    "content": "This policy establishes the Bank's commitment to combating money laundering, terrorist financing, and sanctions violations in accordance with the Bank Secrecy Act (BSA), AML Act, OFAC regulations, and FATF Recommendations. All employees must complete annual AML training. Suspicious activities must be reported via SAR within 30 days. Transaction monitoring systems screen all deposits >$10k, wire transfers >$5k, and unusual patterns. Enhanced due diligence (EDD) required for PEPs, high-risk jurisdictions, and beneficial owners from countries on OFAC/FATF lists.",
+    "effective_date": "2025-05-26T20:53:36.333309",
+    "last_reviewed": "2026-03-29T20:53:36.333319",
+    "version": "v3.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "sar_filing": "$10,000+",
+      "ctr_reporting": "$10,000+",
+      "cdd_review": "All new accounts"
+    },
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_026",
+    "type": "high_risk_jurisdictions",
+    "title": "High-Risk Jurisdiction Watchlist and Country-Based Screening",
+    "content": "Countries classified as high-risk require enhanced screening and monitoring: FATF Black List (North Korea, Iran), FATF Grey List (actively monitored countries), OFAC SDN countries (Russia, Syria, Cuba). Additional scrutiny for: countries with weak AML/CFT regimes, countries with significant corruption, countries known for sanctions evasion. Transactions involving these jurisdictions: mandatory EDD, management override required, SAR filing if proceeds suspected illicit. Monthly review of new additions to sanctions lists.",
+    "effective_date": "2025-03-19T20:53:36.333335",
+    "last_reviewed": "2026-04-03T20:53:36.333345",
+    "version": "v3.2",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_027",
+    "type": "high_risk_jurisdictions",
+    "title": "High-Risk Jurisdiction Watchlist and Country-Based Screening",
+    "content": "Countries classified as high-risk require enhanced screening and monitoring: FATF Black List (North Korea, Iran), FATF Grey List (actively monitored countries), OFAC SDN countries (Russia, Syria, Cuba). Additional scrutiny for: countries with weak AML/CFT regimes, countries with significant corruption, countries known for sanctions evasion. Transactions involving these jurisdictions: mandatory EDD, management override required, SAR filing if proceeds suspected illicit. Monthly review of new additions to sanctions lists.",
+    "effective_date": "2025-06-03T20:53:36.333364",
+    "last_reviewed": "2026-05-06T20:53:36.333374",
+    "version": "v3.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_028",
+    "type": "sanctions_policy",
+    "title": "OFAC Sanctions Screening & Compliance Program",
+    "content": "All customers, beneficiaries, and related parties screened against OFAC SDN list at account opening and daily during active periods. Screening includes: exact name match, phonetic match (90%+ threshold), name variants, common aliases. Hits require manual review: confirm false positive or initiate blocking. Confirmed sanctions hits: block transaction immediately, freeze account, file Blocking Report within 10 days. Monthly OFAC list updates downloaded and integrated into screening database. Staff training on OFAC compliance required annually.",
+    "effective_date": "2024-08-13T20:53:36.333415",
+    "last_reviewed": "2026-05-10T20:53:36.333425",
+    "version": "v3.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_029",
+    "type": "sanctions_policy",
+    "title": "OFAC Sanctions Screening & Compliance Program",
+    "content": "All customers, beneficiaries, and related parties screened against OFAC SDN list at account opening and daily during active periods. Screening includes: exact name match, phonetic match (90%+ threshold), name variants, common aliases. Hits require manual review: confirm false positive or initiate blocking. Confirmed sanctions hits: block transaction immediately, freeze account, file Blocking Report within 10 days. Monthly OFAC list updates downloaded and integrated into screening database. Staff training on OFAC compliance required annually.",
+    "effective_date": "2025-12-08T20:53:36.333458",
+    "last_reviewed": "2026-02-22T20:53:36.333469",
+    "version": "v2.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_030",
+    "type": "kyc_guidelines",
+    "title": "Enhanced Know Your Customer (KYC) & Customer Due Diligence (CDD) Standards",
+    "content": "All customers undergo KYC verification before account opening. For individuals: government-issued ID, address verification, beneficial ownership confirmation. For entities: corporate registration, bylaws, beneficial owner list (BO certification), source of funds documentation. Enhanced Due Diligence (EDD) required for: PEPs (Politically Exposed Persons), customers from high-risk jurisdictions (FATF grey/black list), cash-intensive businesses, high net worth individuals (>$5M). Ongoing monitoring: quarterly review of high-risk customers, annual review of medium-risk, biennial review of low-risk.",
+    "effective_date": "2025-07-27T20:53:36.333487",
+    "last_reviewed": "2026-05-14T20:53:36.333498",
+    "version": "v4.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_031",
+    "type": "kyc_guidelines",
+    "title": "Enhanced Know Your Customer (KYC) & Customer Due Diligence (CDD) Standards",
+    "content": "All customers undergo KYC verification before account opening. For individuals: government-issued ID, address verification, beneficial ownership confirmation. For entities: corporate registration, bylaws, beneficial owner list (BO certification), source of funds documentation. Enhanced Due Diligence (EDD) required for: PEPs (Politically Exposed Persons), customers from high-risk jurisdictions (FATF grey/black list), cash-intensive businesses, high net worth individuals (>$5M). Ongoing monitoring: quarterly review of high-risk customers, annual review of medium-risk, biennial review of low-risk.",
+    "effective_date": "2025-10-10T20:53:36.333514",
+    "last_reviewed": "2026-03-17T20:53:36.333524",
+    "version": "v4.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_032",
+    "type": "escalation_procedures",
+    "title": "Case Escalation Decision Framework and Approval Workflows",
+    "content": "Risk scores 0.0-0.3: APPROVE (standard processing). Risk scores 0.3-0.6: MANUAL_REVIEW (escalate to Risk Committee). Risk scores 0.6-1.0: BLOCK/SAR FILE (escalate to Compliance Officer, notify OFAC). Hard gates override: Sanctions hits = BLOCK immediately, CTR >$100k = mandatory SAR, Structuring pattern = BLOCK + SAR. Approval authority: Risk Analyst (escalate), Risk Committee (>$50k or >0.5 risk), Compliance Officer (SAR decisions), Legal Counsel (regulatory exposure >$1M). All blocks documented within 2 business days.",
+    "effective_date": "2025-07-08T20:53:36.333540",
+    "last_reviewed": "2026-03-18T20:53:36.333550",
+    "version": "v4.2",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_033",
+    "type": "transaction_limits",
+    "title": "Transaction Amount and Frequency Thresholds",
+    "content": "Domestic transfers: Individual limit $100k/day, $500k/month unless enhanced verification provided. Wire transfers: $50k+ requires management approval, >$250k requires C-level approval and EDD. International wires to high-risk jurisdictions: $10k+ limit, all subject to OFAC screening. ATM withdrawals: $5k/day limit, daily aggregate $20k. Multiple transactions in 24hrs totaling >$50k trigger structuring review. Round amounts >3 times in 30 days trigger compliance alert.",
+    "effective_date": "2025-08-29T20:53:36.333570",
+    "last_reviewed": "2026-02-28T20:53:36.333580",
+    "version": "v4.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "domestic_daily": "$100k",
+      "international_daily": "$25k",
+      "atm_daily": "$5k"
+    },
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_034",
+    "type": "kyc_guidelines",
+    "title": "Enhanced Know Your Customer (KYC) & Customer Due Diligence (CDD) Standards",
+    "content": "All customers undergo KYC verification before account opening. For individuals: government-issued ID, address verification, beneficial ownership confirmation. For entities: corporate registration, bylaws, beneficial owner list (BO certification), source of funds documentation. Enhanced Due Diligence (EDD) required for: PEPs (Politically Exposed Persons), customers from high-risk jurisdictions (FATF grey/black list), cash-intensive businesses, high net worth individuals (>$5M). Ongoing monitoring: quarterly review of high-risk customers, annual review of medium-risk, biennial review of low-risk.",
+    "effective_date": "2025-04-04T20:53:36.333599",
+    "last_reviewed": "2026-05-03T20:53:36.333609",
+    "version": "v4.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_035",
+    "type": "transaction_limits",
+    "title": "Transaction Amount and Frequency Thresholds",
+    "content": "Domestic transfers: Individual limit $100k/day, $500k/month unless enhanced verification provided. Wire transfers: $50k+ requires management approval, >$250k requires C-level approval and EDD. International wires to high-risk jurisdictions: $10k+ limit, all subject to OFAC screening. ATM withdrawals: $5k/day limit, daily aggregate $20k. Multiple transactions in 24hrs totaling >$50k trigger structuring review. Round amounts >3 times in 30 days trigger compliance alert.",
+    "effective_date": "2024-07-07T20:53:36.333627",
+    "last_reviewed": "2026-02-19T20:53:36.333637",
+    "version": "v3.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "domestic_daily": "$100k",
+      "international_daily": "$25k",
+      "atm_daily": "$5k"
+    },
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_036",
+    "type": "sanctions_policy",
+    "title": "OFAC Sanctions Screening & Compliance Program",
+    "content": "All customers, beneficiaries, and related parties screened against OFAC SDN list at account opening and daily during active periods. Screening includes: exact name match, phonetic match (90%+ threshold), name variants, common aliases. Hits require manual review: confirm false positive or initiate blocking. Confirmed sanctions hits: block transaction immediately, freeze account, file Blocking Report within 10 days. Monthly OFAC list updates downloaded and integrated into screening database. Staff training on OFAC compliance required annually.",
+    "effective_date": "2025-07-28T20:53:36.333655",
+    "last_reviewed": "2026-05-07T20:53:36.333665",
+    "version": "v4.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_037",
+    "type": "aml_policy",
+    "title": "Group Anti-Money Laundering (AML) Policy and Compliance Framework",
+    "content": "This policy establishes the Bank's commitment to combating money laundering, terrorist financing, and sanctions violations in accordance with the Bank Secrecy Act (BSA), AML Act, OFAC regulations, and FATF Recommendations. All employees must complete annual AML training. Suspicious activities must be reported via SAR within 30 days. Transaction monitoring systems screen all deposits >$10k, wire transfers >$5k, and unusual patterns. Enhanced due diligence (EDD) required for PEPs, high-risk jurisdictions, and beneficial owners from countries on OFAC/FATF lists.",
+    "effective_date": "2025-04-14T20:53:36.333685",
+    "last_reviewed": "2026-02-18T20:53:36.333695",
+    "version": "v4.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "sar_filing": "$10,000+",
+      "ctr_reporting": "$10,000+",
+      "cdd_review": "All new accounts"
+    },
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_038",
+    "type": "escalation_procedures",
+    "title": "Case Escalation Decision Framework and Approval Workflows",
+    "content": "Risk scores 0.0-0.3: APPROVE (standard processing). Risk scores 0.3-0.6: MANUAL_REVIEW (escalate to Risk Committee). Risk scores 0.6-1.0: BLOCK/SAR FILE (escalate to Compliance Officer, notify OFAC). Hard gates override: Sanctions hits = BLOCK immediately, CTR >$100k = mandatory SAR, Structuring pattern = BLOCK + SAR. Approval authority: Risk Analyst (escalate), Risk Committee (>$50k or >0.5 risk), Compliance Officer (SAR decisions), Legal Counsel (regulatory exposure >$1M). All blocks documented within 2 business days.",
+    "effective_date": "2026-01-05T20:53:36.333714",
+    "last_reviewed": "2026-04-02T20:53:36.333723",
+    "version": "v4.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_039",
+    "type": "sanctions_policy",
+    "title": "OFAC Sanctions Screening & Compliance Program",
+    "content": "All customers, beneficiaries, and related parties screened against OFAC SDN list at account opening and daily during active periods. Screening includes: exact name match, phonetic match (90%+ threshold), name variants, common aliases. Hits require manual review: confirm false positive or initiate blocking. Confirmed sanctions hits: block transaction immediately, freeze account, file Blocking Report within 10 days. Monthly OFAC list updates downloaded and integrated into screening database. Staff training on OFAC compliance required annually.",
+    "effective_date": "2025-02-02T20:53:36.333741",
+    "last_reviewed": "2026-05-08T20:53:36.333751",
+    "version": "v4.2",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_040",
+    "type": "aml_policy",
+    "title": "Group Anti-Money Laundering (AML) Policy and Compliance Framework",
+    "content": "This policy establishes the Bank's commitment to combating money laundering, terrorist financing, and sanctions violations in accordance with the Bank Secrecy Act (BSA), AML Act, OFAC regulations, and FATF Recommendations. All employees must complete annual AML training. Suspicious activities must be reported via SAR within 30 days. Transaction monitoring systems screen all deposits >$10k, wire transfers >$5k, and unusual patterns. Enhanced due diligence (EDD) required for PEPs, high-risk jurisdictions, and beneficial owners from countries on OFAC/FATF lists.",
+    "effective_date": "2024-12-13T20:53:36.333768",
+    "last_reviewed": "2026-03-15T20:53:36.333778",
+    "version": "v2.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "sar_filing": "$10,000+",
+      "ctr_reporting": "$10,000+",
+      "cdd_review": "All new accounts"
+    },
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_041",
+    "type": "transaction_limits",
+    "title": "Transaction Amount and Frequency Thresholds",
+    "content": "Domestic transfers: Individual limit $100k/day, $500k/month unless enhanced verification provided. Wire transfers: $50k+ requires management approval, >$250k requires C-level approval and EDD. International wires to high-risk jurisdictions: $10k+ limit, all subject to OFAC screening. ATM withdrawals: $5k/day limit, daily aggregate $20k. Multiple transactions in 24hrs totaling >$50k trigger structuring review. Round amounts >3 times in 30 days trigger compliance alert.",
+    "effective_date": "2024-11-03T20:53:36.333795",
+    "last_reviewed": "2026-04-27T20:53:36.333807",
+    "version": "v3.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "domestic_daily": "$100k",
+      "international_daily": "$25k",
+      "atm_daily": "$5k"
+    },
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_042",
+    "type": "sanctions_policy",
+    "title": "OFAC Sanctions Screening & Compliance Program",
+    "content": "All customers, beneficiaries, and related parties screened against OFAC SDN list at account opening and daily during active periods. Screening includes: exact name match, phonetic match (90%+ threshold), name variants, common aliases. Hits require manual review: confirm false positive or initiate blocking. Confirmed sanctions hits: block transaction immediately, freeze account, file Blocking Report within 10 days. Monthly OFAC list updates downloaded and integrated into screening database. Staff training on OFAC compliance required annually.",
+    "effective_date": "2024-08-31T20:53:36.333824",
+    "last_reviewed": "2026-02-22T20:53:36.333835",
+    "version": "v3.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "critical"
+  },
+  {
+    "id": "policy_043",
+    "type": "high_risk_jurisdictions",
+    "title": "High-Risk Jurisdiction Watchlist and Country-Based Screening",
+    "content": "Countries classified as high-risk require enhanced screening and monitoring: FATF Black List (North Korea, Iran), FATF Grey List (actively monitored countries), OFAC SDN countries (Russia, Syria, Cuba). Additional scrutiny for: countries with weak AML/CFT regimes, countries with significant corruption, countries known for sanctions evasion. Transactions involving these jurisdictions: mandatory EDD, management override required, SAR filing if proceeds suspected illicit. Monthly review of new additions to sanctions lists.",
+    "effective_date": "2024-11-27T20:53:36.333853",
+    "last_reviewed": "2026-03-02T20:53:36.333896",
+    "version": "v3.2",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_044",
+    "type": "kyc_guidelines",
+    "title": "Enhanced Know Your Customer (KYC) & Customer Due Diligence (CDD) Standards",
+    "content": "All customers undergo KYC verification before account opening. For individuals: government-issued ID, address verification, beneficial ownership confirmation. For entities: corporate registration, bylaws, beneficial owner list (BO certification), source of funds documentation. Enhanced Due Diligence (EDD) required for: PEPs (Politically Exposed Persons), customers from high-risk jurisdictions (FATF grey/black list), cash-intensive businesses, high net worth individuals (>$5M). Ongoing monitoring: quarterly review of high-risk customers, annual review of medium-risk, biennial review of low-risk.",
+    "effective_date": "2025-11-20T20:53:36.333916",
+    "last_reviewed": "2026-04-11T20:53:36.333926",
+    "version": "v3.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_045",
+    "type": "high_risk_jurisdictions",
+    "title": "High-Risk Jurisdiction Watchlist and Country-Based Screening",
+    "content": "Countries classified as high-risk require enhanced screening and monitoring: FATF Black List (North Korea, Iran), FATF Grey List (actively monitored countries), OFAC SDN countries (Russia, Syria, Cuba). Additional scrutiny for: countries with weak AML/CFT regimes, countries with significant corruption, countries known for sanctions evasion. Transactions involving these jurisdictions: mandatory EDD, management override required, SAR filing if proceeds suspected illicit. Monthly review of new additions to sanctions lists.",
+    "effective_date": "2024-07-13T20:53:36.333958",
+    "last_reviewed": "2026-02-27T20:53:36.333967",
+    "version": "v4.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_046",
+    "type": "transaction_limits",
+    "title": "Transaction Amount and Frequency Thresholds",
+    "content": "Domestic transfers: Individual limit $100k/day, $500k/month unless enhanced verification provided. Wire transfers: $50k+ requires management approval, >$250k requires C-level approval and EDD. International wires to high-risk jurisdictions: $10k+ limit, all subject to OFAC screening. ATM withdrawals: $5k/day limit, daily aggregate $20k. Multiple transactions in 24hrs totaling >$50k trigger structuring review. Round amounts >3 times in 30 days trigger compliance alert.",
+    "effective_date": "2026-01-18T20:53:36.333983",
+    "last_reviewed": "2026-03-14T20:53:36.333993",
+    "version": "v3.1",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "domestic_daily": "$100k",
+      "international_daily": "$25k",
+      "atm_daily": "$5k"
+    },
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_047",
+    "type": "high_risk_jurisdictions",
+    "title": "High-Risk Jurisdiction Watchlist and Country-Based Screening",
+    "content": "Countries classified as high-risk require enhanced screening and monitoring: FATF Black List (North Korea, Iran), FATF Grey List (actively monitored countries), OFAC SDN countries (Russia, Syria, Cuba). Additional scrutiny for: countries with weak AML/CFT regimes, countries with significant corruption, countries known for sanctions evasion. Transactions involving these jurisdictions: mandatory EDD, management override required, SAR filing if proceeds suspected illicit. Monthly review of new additions to sanctions lists.",
+    "effective_date": "2025-07-14T20:53:36.334009",
+    "last_reviewed": "2026-04-01T20:53:36.334039",
+    "version": "v3.2",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_048",
+    "type": "transaction_limits",
+    "title": "Transaction Amount and Frequency Thresholds",
+    "content": "Domestic transfers: Individual limit $100k/day, $500k/month unless enhanced verification provided. Wire transfers: $50k+ requires management approval, >$250k requires C-level approval and EDD. International wires to high-risk jurisdictions: $10k+ limit, all subject to OFAC screening. ATM withdrawals: $5k/day limit, daily aggregate $20k. Multiple transactions in 24hrs totaling >$50k trigger structuring review. Round amounts >3 times in 30 days trigger compliance alert.",
+    "effective_date": "2024-06-16T20:53:36.334056",
+    "last_reviewed": "2026-02-16T20:53:36.334081",
+    "version": "v3.0",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {
+      "domestic_daily": "$100k",
+      "international_daily": "$25k",
+      "atm_daily": "$5k"
+    },
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_049",
+    "type": "escalation_procedures",
+    "title": "Case Escalation Decision Framework and Approval Workflows",
+    "content": "Risk scores 0.0-0.3: APPROVE (standard processing). Risk scores 0.3-0.6: MANUAL_REVIEW (escalate to Risk Committee). Risk scores 0.6-1.0: BLOCK/SAR FILE (escalate to Compliance Officer, notify OFAC). Hard gates override: Sanctions hits = BLOCK immediately, CTR >$100k = mandatory SAR, Structuring pattern = BLOCK + SAR. Approval authority: Risk Analyst (escalate), Risk Committee (>$50k or >0.5 risk), Compliance Officer (SAR decisions), Legal Counsel (regulatory exposure >$1M). All blocks documented within 2 business days.",
+    "effective_date": "2025-08-05T20:53:36.334097",
+    "last_reviewed": "2026-05-06T20:53:36.334110",
+    "version": "v2.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  },
+  {
+    "id": "policy_050",
+    "type": "high_risk_jurisdictions",
+    "title": "High-Risk Jurisdiction Watchlist and Country-Based Screening",
+    "content": "Countries classified as high-risk require enhanced screening and monitoring: FATF Black List (North Korea, Iran), FATF Grey List (actively monitored countries), OFAC SDN countries (Russia, Syria, Cuba). Additional scrutiny for: countries with weak AML/CFT regimes, countries with significant corruption, countries known for sanctions evasion. Transactions involving these jurisdictions: mandatory EDD, management override required, SAR filing if proceeds suspected illicit. Monthly review of new additions to sanctions lists.",
+    "effective_date": "2024-07-28T20:53:36.334126",
+    "last_reviewed": "2026-04-16T20:53:36.334136",
+    "version": "v4.3",
+    "regulatory_references": [
+      "FinCEN Guidance",
+      "OFAC Regulations",
+      "FATF Recommendations",
+      "OMB Guidance"
+    ],
+    "key_thresholds": {},
+    "severity_level": "warning"
+  }
+]

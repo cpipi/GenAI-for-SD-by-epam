@@ -1,0 +1,15 @@
+{
+  "case_id": "SAMPLE-LOW-001",
+  "customer_id": "CUST-A1B2C3D4",
+  "transaction_amount": 2500,
+  "transaction_type": "transfer",
+  "channel": "online",
+  "device_location": "US",
+  "customer_profile": {
+    "account_age_days": 1095,
+    "avg_monthly_volume": 25000,
+    "previous_txn_count": 347,
+    "country_of_residence": "US"
+  },
+  "description": "Normal domestic transfer, established customer with healthy transaction history"
+}

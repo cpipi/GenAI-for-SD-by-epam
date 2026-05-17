@@ -1,0 +1,402 @@
+[
+  {
+    "case_id": "test_approve_001",
+    "customer_id": "emp_john_smith",
+    "transaction_amount": 4871,
+    "transaction_type": "transfer",
+    "channel": "online",
+    "device_location": "US",
+    "timestamp": "2026-05-13T09:53:36.341078",
+    "customer_profile": {
+      "account_age_days": 1460,
+      "avg_monthly_volume": 9000,
+      "previous_txn_count": 156,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "approve"
+  },
+  {
+    "case_id": "test_approve_002",
+    "customer_id": "cust_lisa_anderson",
+    "transaction_amount": 910,
+    "transaction_type": "withdrawal",
+    "channel": "atm",
+    "device_location": "US",
+    "timestamp": "2026-05-11T05:53:36.341130",
+    "customer_profile": {
+      "account_age_days": 548,
+      "avg_monthly_volume": 2000,
+      "previous_txn_count": 92,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "approve"
+  },
+  {
+    "case_id": "test_approve_003",
+    "customer_id": "emp_maria_garcia",
+    "transaction_amount": 4135,
+    "transaction_type": "transfer",
+    "channel": "online",
+    "device_location": "US",
+    "timestamp": "2026-05-13T18:53:36.341158",
+    "customer_profile": {
+      "account_age_days": 2190,
+      "avg_monthly_volume": 7600,
+      "previous_txn_count": 312,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "approve"
+  },
+  {
+    "case_id": "test_approve_004",
+    "customer_id": "cust_robert_wilson",
+    "transaction_amount": 703,
+    "transaction_type": "payment",
+    "channel": "online",
+    "device_location": "UK",
+    "timestamp": "2026-05-14T15:53:36.341178",
+    "customer_profile": {
+      "account_age_days": 1095,
+      "avg_monthly_volume": 1800,
+      "previous_txn_count": 234,
+      "country_of_residence": "UK"
+    },
+    "expected_decision": "approve"
+  },
+  {
+    "case_id": "test_approve_005",
+    "customer_id": "cust_lisa_anderson",
+    "transaction_amount": 739,
+    "transaction_type": "withdrawal",
+    "channel": "atm",
+    "device_location": "US",
+    "timestamp": "2026-05-14T13:53:36.341227",
+    "customer_profile": {
+      "account_age_days": 548,
+      "avg_monthly_volume": 2000,
+      "previous_txn_count": 92,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "approve"
+  },
+  {
+    "case_id": "test_approve_006",
+    "customer_id": "cust_lisa_anderson",
+    "transaction_amount": 935,
+    "transaction_type": "withdrawal",
+    "channel": "atm",
+    "device_location": "US",
+    "timestamp": "2026-05-17T04:53:36.341240",
+    "customer_profile": {
+      "account_age_days": 548,
+      "avg_monthly_volume": 2000,
+      "previous_txn_count": 92,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "approve"
+  },
+  {
+    "case_id": "test_approve_007",
+    "customer_id": "cust_lisa_anderson",
+    "transaction_amount": 401,
+    "transaction_type": "withdrawal",
+    "channel": "atm",
+    "device_location": "US",
+    "timestamp": "2026-05-15T14:53:36.341246",
+    "customer_profile": {
+      "account_age_days": 548,
+      "avg_monthly_volume": 2000,
+      "previous_txn_count": 92,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "approve"
+  },
+  {
+    "case_id": "test_approve_008",
+    "customer_id": "cust_james_brown",
+    "transaction_amount": 316,
+    "transaction_type": "withdrawal",
+    "channel": "atm",
+    "device_location": "DE",
+    "timestamp": "2026-05-15T00:53:36.341252",
+    "customer_profile": {
+      "account_age_days": 2920,
+      "avg_monthly_volume": 1500,
+      "previous_txn_count": 445,
+      "country_of_residence": "DE"
+    },
+    "expected_decision": "approve"
+  },
+  {
+    "case_id": "test_approve_009",
+    "customer_id": "cust_james_brown",
+    "transaction_amount": 183,
+    "transaction_type": "withdrawal",
+    "channel": "atm",
+    "device_location": "DE",
+    "timestamp": "2026-05-16T03:53:36.341257",
+    "customer_profile": {
+      "account_age_days": 2920,
+      "avg_monthly_volume": 1500,
+      "previous_txn_count": 445,
+      "country_of_residence": "DE"
+    },
+    "expected_decision": "approve"
+  },
+  {
+    "case_id": "test_approve_010",
+    "customer_id": "emp_maria_garcia",
+    "transaction_amount": 3777,
+    "transaction_type": "transfer",
+    "channel": "online",
+    "device_location": "US",
+    "timestamp": "2026-05-11T22:53:36.341267",
+    "customer_profile": {
+      "account_age_days": 2190,
+      "avg_monthly_volume": 7600,
+      "previous_txn_count": 312,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "approve"
+  },
+  {
+    "case_id": "test_approve_011",
+    "customer_id": "emp_john_smith",
+    "transaction_amount": 4460,
+    "transaction_type": "transfer",
+    "channel": "online",
+    "device_location": "US",
+    "timestamp": "2026-05-17T19:53:36.341286",
+    "customer_profile": {
+      "account_age_days": 1460,
+      "avg_monthly_volume": 9000,
+      "previous_txn_count": 156,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "approve"
+  },
+  {
+    "case_id": "test_approve_012",
+    "customer_id": "cust_robert_wilson",
+    "transaction_amount": 711,
+    "transaction_type": "payment",
+    "channel": "online",
+    "device_location": "UK",
+    "timestamp": "2026-05-11T11:53:36.341291",
+    "customer_profile": {
+      "account_age_days": 1095,
+      "avg_monthly_volume": 1800,
+      "previous_txn_count": 234,
+      "country_of_residence": "UK"
+    },
+    "expected_decision": "approve"
+  },
+  {
+    "case_id": "test_review_013",
+    "customer_id": "biz_tech_solutions",
+    "transaction_amount": 15096,
+    "transaction_type": "payment",
+    "channel": "online",
+    "device_location": "US",
+    "timestamp": "2026-05-17T15:53:36.341303",
+    "customer_profile": {
+      "account_age_days": 180,
+      "avg_monthly_volume": 28000,
+      "previous_txn_count": 12,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "manual_review"
+  },
+  {
+    "case_id": "test_review_014",
+    "customer_id": "biz_acme_corp",
+    "transaction_amount": 20090,
+    "transaction_type": "transfer",
+    "channel": "online",
+    "device_location": "US",
+    "timestamp": "2026-05-16T07:53:36.341311",
+    "customer_profile": {
+      "account_age_days": 365,
+      "avg_monthly_volume": 45000,
+      "previous_txn_count": 23,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "manual_review"
+  },
+  {
+    "case_id": "test_review_015",
+    "customer_id": "traveler_david_lee",
+    "transaction_amount": 8429,
+    "transaction_type": "transfer",
+    "channel": "online",
+    "device_location": "UK",
+    "timestamp": "2026-05-17T10:53:36.341318",
+    "customer_profile": {
+      "account_age_days": 1095,
+      "avg_monthly_volume": 3500,
+      "previous_txn_count": 156,
+      "country_of_residence": "UK"
+    },
+    "expected_decision": "manual_review"
+  },
+  {
+    "case_id": "test_review_016",
+    "customer_id": "traveler_david_lee",
+    "transaction_amount": 7978,
+    "transaction_type": "transfer",
+    "channel": "online",
+    "device_location": "UK",
+    "timestamp": "2026-05-16T10:53:36.341323",
+    "customer_profile": {
+      "account_age_days": 1095,
+      "avg_monthly_volume": 3500,
+      "previous_txn_count": 156,
+      "country_of_residence": "UK"
+    },
+    "expected_decision": "manual_review"
+  },
+  {
+    "case_id": "test_review_017",
+    "customer_id": "traveler_david_lee",
+    "transaction_amount": 8707,
+    "transaction_type": "transfer",
+    "channel": "online",
+    "device_location": "UK",
+    "timestamp": "2026-05-16T18:53:36.341328",
+    "customer_profile": {
+      "account_age_days": 1095,
+      "avg_monthly_volume": 3500,
+      "previous_txn_count": 156,
+      "country_of_residence": "UK"
+    },
+    "expected_decision": "manual_review"
+  },
+  {
+    "case_id": "test_block_018",
+    "customer_id": "cust_dormant_2019",
+    "transaction_amount": 118470,
+    "transaction_type": "withdrawal",
+    "channel": "wire_transfer",
+    "device_location": "IR",
+    "timestamp": "2026-05-16T09:53:36.341336",
+    "customer_profile": {
+      "account_age_days": 2190,
+      "avg_monthly_volume": 0,
+      "previous_txn_count": 0,
+      "country_of_residence": "IR"
+    },
+    "expected_decision": "block"
+  },
+  {
+    "case_id": "test_block_019",
+    "customer_id": "bashar al-assad",
+    "transaction_amount": 50652,
+    "transaction_type": "transfer",
+    "channel": "wire_transfer",
+    "device_location": "SY",
+    "timestamp": "2026-05-17T10:53:36.341342",
+    "customer_profile": {
+      "account_age_days": 60,
+      "avg_monthly_volume": 0,
+      "previous_txn_count": 2,
+      "country_of_residence": "SY"
+    },
+    "expected_decision": "block"
+  },
+  {
+    "case_id": "test_block_020",
+    "customer_id": "biz_middleman_corp",
+    "transaction_amount": 251385,
+    "transaction_type": "transfer",
+    "channel": "wire_transfer",
+    "device_location": "RU",
+    "timestamp": "2026-05-17T10:53:36.341348",
+    "customer_profile": {
+      "account_age_days": 30,
+      "avg_monthly_volume": 0,
+      "previous_txn_count": 1,
+      "country_of_residence": "RU"
+    },
+    "expected_decision": "block"
+  },
+  {
+    "case_id": "test_block_021",
+    "customer_id": "struct_user_001",
+    "transaction_amount": 53244,
+    "transaction_type": "transfer",
+    "channel": "online",
+    "device_location": "US",
+    "timestamp": "2026-05-17T09:53:36.341354",
+    "customer_profile": {
+      "account_age_days": 45,
+      "avg_monthly_volume": 12000,
+      "previous_txn_count": 3,
+      "country_of_residence": "US"
+    },
+    "expected_decision": "block"
+  },
+  {
+    "case_id": "test_block_022",
+    "customer_id": "biz_middleman_corp",
+    "transaction_amount": 250437,
+    "transaction_type": "transfer",
+    "channel": "wire_transfer",
+    "device_location": "RU",
+    "timestamp": "2026-05-15T20:53:36.341359",
+    "customer_profile": {
+      "account_age_days": 30,
+      "avg_monthly_volume": 0,
+      "previous_txn_count": 1,
+      "country_of_residence": "RU"
+    },
+    "expected_decision": "block"
+  },
+  {
+    "case_id": "test_block_023",
+    "customer_id": "cust_sudden_trader",
+    "transaction_amount": 66773,
+    "transaction_type": "transfer",
+    "channel": "international",
+    "device_location": "KP",
+    "timestamp": "2026-05-17T01:53:36.341365",
+    "customer_profile": {
+      "account_age_days": 90,
+      "avg_monthly_volume": 500,
+      "previous_txn_count": 8,
+      "country_of_residence": "KP"
+    },
+    "expected_decision": "block"
+  },
+  {
+    "case_id": "test_block_024",
+    "customer_id": "cust_dormant_2019",
+    "transaction_amount": 118509,
+    "transaction_type": "withdrawal",
+    "channel": "wire_transfer",
+    "device_location": "IR",
+    "timestamp": "2026-05-16T14:53:36.341369",
+    "customer_profile": {
+      "account_age_days": 2190,
+      "avg_monthly_volume": 0,
+      "previous_txn_count": 0,
+      "country_of_residence": "IR"
+    },
+    "expected_decision": "block"
+  },
+  {
+    "case_id": "test_block_025",
+    "customer_id": "biz_middleman_corp",
+    "transaction_amount": 250866,
+    "transaction_type": "transfer",
+    "channel": "wire_transfer",
+    "device_location": "RU",
+    "timestamp": "2026-05-16T18:53:36.341377",
+    "customer_profile": {
+      "account_age_days": 30,
+      "avg_monthly_volume": 0,
+      "previous_txn_count": 1,
+      "country_of_residence": "RU"
+    },
+    "expected_decision": "block"
+  }
+]

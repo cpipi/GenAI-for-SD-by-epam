@@ -1,0 +1,1889 @@
+[
+  {
+    "id": "pattern_0001",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 199,
+    "detection_rate": 0.73,
+    "created_at": "2025-09-01T20:53:36.322458"
+  },
+  {
+    "id": "pattern_0002",
+    "risk_type": "unusual_velocity",
+    "risk_name": "Unusual Transaction Velocity",
+    "description": "Sudden spike in transaction frequency or volume that deviates significantly from customer's historical baseline. Indicator of account compromise, sudden business expansion, or illicit activity.",
+    "indicators": [
+      "Account with average 2 txns/month suddenly shows 20+ txns/day",
+      "Outbound velocity increases >500% month-over-month",
+      "High-value transactions originating from previously inactive customer",
+      "Geolocation changes concurrent with velocity spike",
+      "New payee introduction with high-value transfers"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "medium",
+    "regulatory_basis": "OFAC Guidance, FinCEN SAR Filing Guidelines, ABA BSA/AML Handbook",
+    "case_count": 183,
+    "detection_rate": 0.87,
+    "created_at": "2024-10-06T20:53:36.322544"
+  },
+  {
+    "id": "pattern_0003",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 118,
+    "detection_rate": 0.66,
+    "created_at": "2026-01-12T20:53:36.322580"
+  },
+  {
+    "id": "pattern_0004",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 139,
+    "detection_rate": 0.83,
+    "created_at": "2024-09-20T20:53:36.322598"
+  },
+  {
+    "id": "pattern_0005",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 117,
+    "detection_rate": 0.72,
+    "created_at": "2024-08-22T20:53:36.322627"
+  },
+  {
+    "id": "pattern_0006",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 50,
+    "detection_rate": 0.86,
+    "created_at": "2025-05-04T20:53:36.322644"
+  },
+  {
+    "id": "pattern_0007",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 65,
+    "detection_rate": 0.94,
+    "created_at": "2025-05-08T20:53:36.322660"
+  },
+  {
+    "id": "pattern_0008",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 107,
+    "detection_rate": 0.68,
+    "created_at": "2025-04-30T20:53:36.322677"
+  },
+  {
+    "id": "pattern_0009",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 196,
+    "detection_rate": 0.79,
+    "created_at": "2025-12-11T20:53:36.322712"
+  },
+  {
+    "id": "pattern_0010",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 151,
+    "detection_rate": 0.74,
+    "created_at": "2024-07-13T20:53:36.322729"
+  },
+  {
+    "id": "pattern_0011",
+    "risk_type": "dormant_account_activation",
+    "risk_name": "Dormant Account Activation",
+    "description": "Sudden high-value activity on previously dormant account (no activity for 6+ months). Classic indicator of account takeover, credential compromise, or money laundering using shell accounts.",
+    "indicators": [
+      "Account dormant >12 months then $250k+ wire within 48 hours",
+      "Geolocation login from new jurisdiction preceded by high outbound transfer",
+      "Email/password changed immediately prior to large withdrawal",
+      "Multiple dormant accounts activated simultaneously by same initiator",
+      "Immediate transfer to newly added beneficiary"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "Fraud Detection Standards, Account Security Guidelines",
+    "case_count": 59,
+    "detection_rate": 0.86,
+    "created_at": "2026-03-02T20:53:36.322746"
+  },
+  {
+    "id": "pattern_0012",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 30,
+    "detection_rate": 0.91,
+    "created_at": "2026-01-04T20:53:36.322763"
+  },
+  {
+    "id": "pattern_0013",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 126,
+    "detection_rate": 0.84,
+    "created_at": "2025-04-09T20:53:36.322812"
+  },
+  {
+    "id": "pattern_0014",
+    "risk_type": "unusual_velocity",
+    "risk_name": "Unusual Transaction Velocity",
+    "description": "Sudden spike in transaction frequency or volume that deviates significantly from customer's historical baseline. Indicator of account compromise, sudden business expansion, or illicit activity.",
+    "indicators": [
+      "Account with average 2 txns/month suddenly shows 20+ txns/day",
+      "Outbound velocity increases >500% month-over-month",
+      "High-value transactions originating from previously inactive customer",
+      "Geolocation changes concurrent with velocity spike",
+      "New payee introduction with high-value transfers"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "medium",
+    "regulatory_basis": "OFAC Guidance, FinCEN SAR Filing Guidelines, ABA BSA/AML Handbook",
+    "case_count": 100,
+    "detection_rate": 0.71,
+    "created_at": "2025-07-18T20:53:36.322828"
+  },
+  {
+    "id": "pattern_0015",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 172,
+    "detection_rate": 0.7,
+    "created_at": "2025-08-10T20:53:36.322911"
+  },
+  {
+    "id": "pattern_0016",
+    "risk_type": "unusual_velocity",
+    "risk_name": "Unusual Transaction Velocity",
+    "description": "Sudden spike in transaction frequency or volume that deviates significantly from customer's historical baseline. Indicator of account compromise, sudden business expansion, or illicit activity.",
+    "indicators": [
+      "Account with average 2 txns/month suddenly shows 20+ txns/day",
+      "Outbound velocity increases >500% month-over-month",
+      "High-value transactions originating from previously inactive customer",
+      "Geolocation changes concurrent with velocity spike",
+      "New payee introduction with high-value transfers"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "medium",
+    "regulatory_basis": "OFAC Guidance, FinCEN SAR Filing Guidelines, ABA BSA/AML Handbook",
+    "case_count": 107,
+    "detection_rate": 0.73,
+    "created_at": "2024-07-01T20:53:36.322933"
+  },
+  {
+    "id": "pattern_0017",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 185,
+    "detection_rate": 0.75,
+    "created_at": "2026-02-19T20:53:36.322963"
+  },
+  {
+    "id": "pattern_0018",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 90,
+    "detection_rate": 0.77,
+    "created_at": "2026-02-09T20:53:36.322981"
+  },
+  {
+    "id": "pattern_0019",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 193,
+    "detection_rate": 0.74,
+    "created_at": "2024-06-15T20:53:36.322997"
+  },
+  {
+    "id": "pattern_0020",
+    "risk_type": "beneficial_owner_mismatch",
+    "risk_name": "Beneficial Owner Mismatch",
+    "description": "Transaction parties or control patterns don't align with declared beneficial ownership or corporate structure. Suggests use of intermediaries or false documentation.",
+    "indicators": [
+      "Account funded by entity A but controlled transactions to entity C",
+      "Director listed as beneficial owner but funds flow patterns show different party in control",
+      "Funds pass through company but don't align with stated business operations",
+      "Beneficial owner changes shortly before high-value transactions",
+      "Related party transactions at unfavorable rates"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "high",
+    "regulatory_basis": "CDD/EDD Requirements, BO Identification Rules, FATF Recommendation 24",
+    "case_count": 174,
+    "detection_rate": 0.79,
+    "created_at": "2025-07-20T20:53:36.323013"
+  },
+  {
+    "id": "pattern_0021",
+    "risk_type": "unusual_velocity",
+    "risk_name": "Unusual Transaction Velocity",
+    "description": "Sudden spike in transaction frequency or volume that deviates significantly from customer's historical baseline. Indicator of account compromise, sudden business expansion, or illicit activity.",
+    "indicators": [
+      "Account with average 2 txns/month suddenly shows 20+ txns/day",
+      "Outbound velocity increases >500% month-over-month",
+      "High-value transactions originating from previously inactive customer",
+      "Geolocation changes concurrent with velocity spike",
+      "New payee introduction with high-value transfers"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "medium",
+    "regulatory_basis": "OFAC Guidance, FinCEN SAR Filing Guidelines, ABA BSA/AML Handbook",
+    "case_count": 200,
+    "detection_rate": 0.82,
+    "created_at": "2025-07-22T20:53:36.323029"
+  },
+  {
+    "id": "pattern_0022",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 112,
+    "detection_rate": 0.76,
+    "created_at": "2025-11-27T20:53:36.323045"
+  },
+  {
+    "id": "pattern_0023",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 33,
+    "detection_rate": 0.88,
+    "created_at": "2025-12-26T20:53:36.323061"
+  },
+  {
+    "id": "pattern_0024",
+    "risk_type": "unusual_velocity",
+    "risk_name": "Unusual Transaction Velocity",
+    "description": "Sudden spike in transaction frequency or volume that deviates significantly from customer's historical baseline. Indicator of account compromise, sudden business expansion, or illicit activity.",
+    "indicators": [
+      "Account with average 2 txns/month suddenly shows 20+ txns/day",
+      "Outbound velocity increases >500% month-over-month",
+      "High-value transactions originating from previously inactive customer",
+      "Geolocation changes concurrent with velocity spike",
+      "New payee introduction with high-value transfers"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "medium",
+    "regulatory_basis": "OFAC Guidance, FinCEN SAR Filing Guidelines, ABA BSA/AML Handbook",
+    "case_count": 184,
+    "detection_rate": 0.78,
+    "created_at": "2026-02-11T20:53:36.323077"
+  },
+  {
+    "id": "pattern_0025",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 162,
+    "detection_rate": 0.95,
+    "created_at": "2024-10-23T20:53:36.323095"
+  },
+  {
+    "id": "pattern_0026",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 12,
+    "detection_rate": 0.85,
+    "created_at": "2025-12-21T20:53:36.323112"
+  },
+  {
+    "id": "pattern_0027",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 174,
+    "detection_rate": 0.75,
+    "created_at": "2025-06-21T20:53:36.323129"
+  },
+  {
+    "id": "pattern_0028",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 126,
+    "detection_rate": 0.65,
+    "created_at": "2025-07-22T20:53:36.323145"
+  },
+  {
+    "id": "pattern_0029",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 139,
+    "detection_rate": 0.92,
+    "created_at": "2024-07-16T20:53:36.323162"
+  },
+  {
+    "id": "pattern_0030",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 165,
+    "detection_rate": 0.71,
+    "created_at": "2025-03-31T20:53:36.323179"
+  },
+  {
+    "id": "pattern_0031",
+    "risk_type": "unusual_velocity",
+    "risk_name": "Unusual Transaction Velocity",
+    "description": "Sudden spike in transaction frequency or volume that deviates significantly from customer's historical baseline. Indicator of account compromise, sudden business expansion, or illicit activity.",
+    "indicators": [
+      "Account with average 2 txns/month suddenly shows 20+ txns/day",
+      "Outbound velocity increases >500% month-over-month",
+      "High-value transactions originating from previously inactive customer",
+      "Geolocation changes concurrent with velocity spike",
+      "New payee introduction with high-value transfers"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "medium",
+    "regulatory_basis": "OFAC Guidance, FinCEN SAR Filing Guidelines, ABA BSA/AML Handbook",
+    "case_count": 145,
+    "detection_rate": 0.93,
+    "created_at": "2024-08-12T20:53:36.323196"
+  },
+  {
+    "id": "pattern_0032",
+    "risk_type": "dormant_account_activation",
+    "risk_name": "Dormant Account Activation",
+    "description": "Sudden high-value activity on previously dormant account (no activity for 6+ months). Classic indicator of account takeover, credential compromise, or money laundering using shell accounts.",
+    "indicators": [
+      "Account dormant >12 months then $250k+ wire within 48 hours",
+      "Geolocation login from new jurisdiction preceded by high outbound transfer",
+      "Email/password changed immediately prior to large withdrawal",
+      "Multiple dormant accounts activated simultaneously by same initiator",
+      "Immediate transfer to newly added beneficiary"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "high",
+    "regulatory_basis": "Fraud Detection Standards, Account Security Guidelines",
+    "case_count": 14,
+    "detection_rate": 0.68,
+    "created_at": "2025-04-11T20:53:36.323212"
+  },
+  {
+    "id": "pattern_0033",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 24,
+    "detection_rate": 0.72,
+    "created_at": "2024-09-14T20:53:36.323229"
+  },
+  {
+    "id": "pattern_0034",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 197,
+    "detection_rate": 0.8,
+    "created_at": "2026-02-06T20:53:36.323245"
+  },
+  {
+    "id": "pattern_0035",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 42,
+    "detection_rate": 0.85,
+    "created_at": "2024-10-02T20:53:36.323264"
+  },
+  {
+    "id": "pattern_0036",
+    "risk_type": "unusual_velocity",
+    "risk_name": "Unusual Transaction Velocity",
+    "description": "Sudden spike in transaction frequency or volume that deviates significantly from customer's historical baseline. Indicator of account compromise, sudden business expansion, or illicit activity.",
+    "indicators": [
+      "Account with average 2 txns/month suddenly shows 20+ txns/day",
+      "Outbound velocity increases >500% month-over-month",
+      "High-value transactions originating from previously inactive customer",
+      "Geolocation changes concurrent with velocity spike",
+      "New payee introduction with high-value transfers"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "medium",
+    "regulatory_basis": "OFAC Guidance, FinCEN SAR Filing Guidelines, ABA BSA/AML Handbook",
+    "case_count": 145,
+    "detection_rate": 0.91,
+    "created_at": "2025-02-08T20:53:36.323280"
+  },
+  {
+    "id": "pattern_0037",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 196,
+    "detection_rate": 0.86,
+    "created_at": "2025-06-02T20:53:36.323298"
+  },
+  {
+    "id": "pattern_0038",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 122,
+    "detection_rate": 0.92,
+    "created_at": "2025-01-10T20:53:36.323315"
+  },
+  {
+    "id": "pattern_0039",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 67,
+    "detection_rate": 0.67,
+    "created_at": "2026-03-27T20:53:36.323330"
+  },
+  {
+    "id": "pattern_0040",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 160,
+    "detection_rate": 0.72,
+    "created_at": "2026-02-04T20:53:36.323346"
+  },
+  {
+    "id": "pattern_0041",
+    "risk_type": "structuring",
+    "risk_name": "Structuring (Smurfing)",
+    "description": "Multiple deposits or transfers just below CTR threshold ($10k) to avoid reporting requirements. Often involves multiple individuals depositing cash into same account or rapid onboarding of related accounts.",
+    "indicators": [
+      "Series of transactions in $9,500-$9,999 range",
+      "Multiple deposits by different individuals to single account",
+      "Rapid account openings followed by immediate deposits",
+      "Pattern repeats monthly or weekly with mathematical precision",
+      "Deposits followed by immediate wire transfers to third parties"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "Bank Secrecy Act (BSA), FinCEN Guidance on Structuring, FATF Recommendation 10",
+    "case_count": 27,
+    "detection_rate": 0.92,
+    "created_at": "2025-05-14T20:53:36.323363"
+  },
+  {
+    "id": "pattern_0042",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 70,
+    "detection_rate": 0.73,
+    "created_at": "2024-12-06T20:53:36.323380"
+  },
+  {
+    "id": "pattern_0043",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 43,
+    "detection_rate": 0.87,
+    "created_at": "2024-09-10T20:53:36.323396"
+  },
+  {
+    "id": "pattern_0044",
+    "risk_type": "beneficial_owner_mismatch",
+    "risk_name": "Beneficial Owner Mismatch",
+    "description": "Transaction parties or control patterns don't align with declared beneficial ownership or corporate structure. Suggests use of intermediaries or false documentation.",
+    "indicators": [
+      "Account funded by entity A but controlled transactions to entity C",
+      "Director listed as beneficial owner but funds flow patterns show different party in control",
+      "Funds pass through company but don't align with stated business operations",
+      "Beneficial owner changes shortly before high-value transactions",
+      "Related party transactions at unfavorable rates"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "CDD/EDD Requirements, BO Identification Rules, FATF Recommendation 24",
+    "case_count": 131,
+    "detection_rate": 0.89,
+    "created_at": "2025-10-05T20:53:36.323413"
+  },
+  {
+    "id": "pattern_0045",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 178,
+    "detection_rate": 0.78,
+    "created_at": "2025-02-08T20:53:36.323432"
+  },
+  {
+    "id": "pattern_0046",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 196,
+    "detection_rate": 0.67,
+    "created_at": "2024-06-17T20:53:36.323449"
+  },
+  {
+    "id": "pattern_0047",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 113,
+    "detection_rate": 0.87,
+    "created_at": "2025-12-27T20:53:36.323468"
+  },
+  {
+    "id": "pattern_0048",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 58,
+    "detection_rate": 0.81,
+    "created_at": "2025-11-25T20:53:36.323486"
+  },
+  {
+    "id": "pattern_0049",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 81,
+    "detection_rate": 0.79,
+    "created_at": "2026-01-30T20:53:36.323503"
+  },
+  {
+    "id": "pattern_0050",
+    "risk_type": "beneficial_owner_mismatch",
+    "risk_name": "Beneficial Owner Mismatch",
+    "description": "Transaction parties or control patterns don't align with declared beneficial ownership or corporate structure. Suggests use of intermediaries or false documentation.",
+    "indicators": [
+      "Account funded by entity A but controlled transactions to entity C",
+      "Director listed as beneficial owner but funds flow patterns show different party in control",
+      "Funds pass through company but don't align with stated business operations",
+      "Beneficial owner changes shortly before high-value transactions",
+      "Related party transactions at unfavorable rates"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "CDD/EDD Requirements, BO Identification Rules, FATF Recommendation 24",
+    "case_count": 35,
+    "detection_rate": 0.67,
+    "created_at": "2024-10-11T20:53:36.323519"
+  },
+  {
+    "id": "pattern_0051",
+    "risk_type": "structuring",
+    "risk_name": "Structuring (Smurfing)",
+    "description": "Multiple deposits or transfers just below CTR threshold ($10k) to avoid reporting requirements. Often involves multiple individuals depositing cash into same account or rapid onboarding of related accounts.",
+    "indicators": [
+      "Series of transactions in $9,500-$9,999 range",
+      "Multiple deposits by different individuals to single account",
+      "Rapid account openings followed by immediate deposits",
+      "Pattern repeats monthly or weekly with mathematical precision",
+      "Deposits followed by immediate wire transfers to third parties"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "Bank Secrecy Act (BSA), FinCEN Guidance on Structuring, FATF Recommendation 10",
+    "case_count": 70,
+    "detection_rate": 0.7,
+    "created_at": "2024-12-06T20:53:36.323537"
+  },
+  {
+    "id": "pattern_0052",
+    "risk_type": "beneficial_owner_mismatch",
+    "risk_name": "Beneficial Owner Mismatch",
+    "description": "Transaction parties or control patterns don't align with declared beneficial ownership or corporate structure. Suggests use of intermediaries or false documentation.",
+    "indicators": [
+      "Account funded by entity A but controlled transactions to entity C",
+      "Director listed as beneficial owner but funds flow patterns show different party in control",
+      "Funds pass through company but don't align with stated business operations",
+      "Beneficial owner changes shortly before high-value transactions",
+      "Related party transactions at unfavorable rates"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "CDD/EDD Requirements, BO Identification Rules, FATF Recommendation 24",
+    "case_count": 112,
+    "detection_rate": 0.92,
+    "created_at": "2025-10-31T20:53:36.323553"
+  },
+  {
+    "id": "pattern_0053",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 109,
+    "detection_rate": 0.73,
+    "created_at": "2025-01-07T20:53:36.323569"
+  },
+  {
+    "id": "pattern_0054",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 188,
+    "detection_rate": 0.94,
+    "created_at": "2024-09-25T20:53:36.323586"
+  },
+  {
+    "id": "pattern_0055",
+    "risk_type": "beneficial_owner_mismatch",
+    "risk_name": "Beneficial Owner Mismatch",
+    "description": "Transaction parties or control patterns don't align with declared beneficial ownership or corporate structure. Suggests use of intermediaries or false documentation.",
+    "indicators": [
+      "Account funded by entity A but controlled transactions to entity C",
+      "Director listed as beneficial owner but funds flow patterns show different party in control",
+      "Funds pass through company but don't align with stated business operations",
+      "Beneficial owner changes shortly before high-value transactions",
+      "Related party transactions at unfavorable rates"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "CDD/EDD Requirements, BO Identification Rules, FATF Recommendation 24",
+    "case_count": 58,
+    "detection_rate": 0.74,
+    "created_at": "2026-02-17T20:53:36.323606"
+  },
+  {
+    "id": "pattern_0056",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 90,
+    "detection_rate": 0.67,
+    "created_at": "2024-08-27T20:53:36.323623"
+  },
+  {
+    "id": "pattern_0057",
+    "risk_type": "beneficial_owner_mismatch",
+    "risk_name": "Beneficial Owner Mismatch",
+    "description": "Transaction parties or control patterns don't align with declared beneficial ownership or corporate structure. Suggests use of intermediaries or false documentation.",
+    "indicators": [
+      "Account funded by entity A but controlled transactions to entity C",
+      "Director listed as beneficial owner but funds flow patterns show different party in control",
+      "Funds pass through company but don't align with stated business operations",
+      "Beneficial owner changes shortly before high-value transactions",
+      "Related party transactions at unfavorable rates"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "CDD/EDD Requirements, BO Identification Rules, FATF Recommendation 24",
+    "case_count": 145,
+    "detection_rate": 0.7,
+    "created_at": "2024-11-13T20:53:36.323641"
+  },
+  {
+    "id": "pattern_0058",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 27,
+    "detection_rate": 0.83,
+    "created_at": "2024-05-26T20:53:36.323658"
+  },
+  {
+    "id": "pattern_0059",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 40,
+    "detection_rate": 0.93,
+    "created_at": "2024-09-11T20:53:36.323674"
+  },
+  {
+    "id": "pattern_0060",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 162,
+    "detection_rate": 0.66,
+    "created_at": "2026-01-24T20:53:36.323690"
+  },
+  {
+    "id": "pattern_0061",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 154,
+    "detection_rate": 0.81,
+    "created_at": "2025-07-24T20:53:36.323706"
+  },
+  {
+    "id": "pattern_0062",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 71,
+    "detection_rate": 0.73,
+    "created_at": "2025-12-04T20:53:36.323723"
+  },
+  {
+    "id": "pattern_0063",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 90,
+    "detection_rate": 0.93,
+    "created_at": "2026-02-02T20:53:36.323739"
+  },
+  {
+    "id": "pattern_0064",
+    "risk_type": "structuring",
+    "risk_name": "Structuring (Smurfing)",
+    "description": "Multiple deposits or transfers just below CTR threshold ($10k) to avoid reporting requirements. Often involves multiple individuals depositing cash into same account or rapid onboarding of related accounts.",
+    "indicators": [
+      "Series of transactions in $9,500-$9,999 range",
+      "Multiple deposits by different individuals to single account",
+      "Rapid account openings followed by immediate deposits",
+      "Pattern repeats monthly or weekly with mathematical precision",
+      "Deposits followed by immediate wire transfers to third parties"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "high",
+    "regulatory_basis": "Bank Secrecy Act (BSA), FinCEN Guidance on Structuring, FATF Recommendation 10",
+    "case_count": 169,
+    "detection_rate": 0.95,
+    "created_at": "2026-01-05T20:53:36.323755"
+  },
+  {
+    "id": "pattern_0065",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 64,
+    "detection_rate": 0.8,
+    "created_at": "2025-12-03T20:53:36.323773"
+  },
+  {
+    "id": "pattern_0066",
+    "risk_type": "dormant_account_activation",
+    "risk_name": "Dormant Account Activation",
+    "description": "Sudden high-value activity on previously dormant account (no activity for 6+ months). Classic indicator of account takeover, credential compromise, or money laundering using shell accounts.",
+    "indicators": [
+      "Account dormant >12 months then $250k+ wire within 48 hours",
+      "Geolocation login from new jurisdiction preceded by high outbound transfer",
+      "Email/password changed immediately prior to large withdrawal",
+      "Multiple dormant accounts activated simultaneously by same initiator",
+      "Immediate transfer to newly added beneficiary"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "Fraud Detection Standards, Account Security Guidelines",
+    "case_count": 72,
+    "detection_rate": 0.76,
+    "created_at": "2025-11-07T20:53:36.323793"
+  },
+  {
+    "id": "pattern_0067",
+    "risk_type": "beneficial_owner_mismatch",
+    "risk_name": "Beneficial Owner Mismatch",
+    "description": "Transaction parties or control patterns don't align with declared beneficial ownership or corporate structure. Suggests use of intermediaries or false documentation.",
+    "indicators": [
+      "Account funded by entity A but controlled transactions to entity C",
+      "Director listed as beneficial owner but funds flow patterns show different party in control",
+      "Funds pass through company but don't align with stated business operations",
+      "Beneficial owner changes shortly before high-value transactions",
+      "Related party transactions at unfavorable rates"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "CDD/EDD Requirements, BO Identification Rules, FATF Recommendation 24",
+    "case_count": 190,
+    "detection_rate": 0.74,
+    "created_at": "2024-06-17T20:53:36.323810"
+  },
+  {
+    "id": "pattern_0068",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 180,
+    "detection_rate": 0.9,
+    "created_at": "2025-06-15T20:53:36.323827"
+  },
+  {
+    "id": "pattern_0069",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 77,
+    "detection_rate": 0.68,
+    "created_at": "2025-12-29T20:53:36.323844"
+  },
+  {
+    "id": "pattern_0070",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 79,
+    "detection_rate": 0.73,
+    "created_at": "2025-09-14T20:53:36.323893"
+  },
+  {
+    "id": "pattern_0071",
+    "risk_type": "dormant_account_activation",
+    "risk_name": "Dormant Account Activation",
+    "description": "Sudden high-value activity on previously dormant account (no activity for 6+ months). Classic indicator of account takeover, credential compromise, or money laundering using shell accounts.",
+    "indicators": [
+      "Account dormant >12 months then $250k+ wire within 48 hours",
+      "Geolocation login from new jurisdiction preceded by high outbound transfer",
+      "Email/password changed immediately prior to large withdrawal",
+      "Multiple dormant accounts activated simultaneously by same initiator",
+      "Immediate transfer to newly added beneficiary"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "Fraud Detection Standards, Account Security Guidelines",
+    "case_count": 185,
+    "detection_rate": 0.84,
+    "created_at": "2025-07-21T20:53:36.323911"
+  },
+  {
+    "id": "pattern_0072",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 74,
+    "detection_rate": 0.92,
+    "created_at": "2026-02-24T20:53:36.323927"
+  },
+  {
+    "id": "pattern_0073",
+    "risk_type": "layering",
+    "risk_name": "Layering & Obfuscation",
+    "description": "Complex movement of funds through multiple accounts, entities, and jurisdictions to obscure the origin and ultimate beneficial owner. Involves trade-based ML, invoice manipulation, and shell company networks.",
+    "indicators": [
+      "Funds flow through 5+ intermediaries before final destination",
+      "Involvement of multiple shell companies in different jurisdictions",
+      "Mismatched invoice amounts vs. actual shipment values",
+      "Multiple wire transfers within same business day",
+      "Use of trade finance for non-existent or phantom shipments"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "high",
+    "regulatory_basis": "FATF 40 Recommendations, FinCEN Typology Reports, Basel AML Index",
+    "case_count": 80,
+    "detection_rate": 0.66,
+    "created_at": "2025-05-11T20:53:36.323957"
+  },
+  {
+    "id": "pattern_0074",
+    "risk_type": "unusual_velocity",
+    "risk_name": "Unusual Transaction Velocity",
+    "description": "Sudden spike in transaction frequency or volume that deviates significantly from customer's historical baseline. Indicator of account compromise, sudden business expansion, or illicit activity.",
+    "indicators": [
+      "Account with average 2 txns/month suddenly shows 20+ txns/day",
+      "Outbound velocity increases >500% month-over-month",
+      "High-value transactions originating from previously inactive customer",
+      "Geolocation changes concurrent with velocity spike",
+      "New payee introduction with high-value transfers"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "medium",
+    "regulatory_basis": "OFAC Guidance, FinCEN SAR Filing Guidelines, ABA BSA/AML Handbook",
+    "case_count": 51,
+    "detection_rate": 0.87,
+    "created_at": "2024-09-30T20:53:36.323974"
+  },
+  {
+    "id": "pattern_0075",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 12,
+    "detection_rate": 0.68,
+    "created_at": "2025-11-16T20:53:36.323992"
+  },
+  {
+    "id": "pattern_0076",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 104,
+    "detection_rate": 0.82,
+    "created_at": "2025-11-17T20:53:36.324010"
+  },
+  {
+    "id": "pattern_0077",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 20,
+    "detection_rate": 0.74,
+    "created_at": "2026-03-08T20:53:36.324025"
+  },
+  {
+    "id": "pattern_0078",
+    "risk_type": "dormant_account_activation",
+    "risk_name": "Dormant Account Activation",
+    "description": "Sudden high-value activity on previously dormant account (no activity for 6+ months). Classic indicator of account takeover, credential compromise, or money laundering using shell accounts.",
+    "indicators": [
+      "Account dormant >12 months then $250k+ wire within 48 hours",
+      "Geolocation login from new jurisdiction preceded by high outbound transfer",
+      "Email/password changed immediately prior to large withdrawal",
+      "Multiple dormant accounts activated simultaneously by same initiator",
+      "Immediate transfer to newly added beneficiary"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "Fraud Detection Standards, Account Security Guidelines",
+    "case_count": 184,
+    "detection_rate": 0.72,
+    "created_at": "2026-01-02T20:53:36.324047"
+  },
+  {
+    "id": "pattern_0079",
+    "risk_type": "dormant_account_activation",
+    "risk_name": "Dormant Account Activation",
+    "description": "Sudden high-value activity on previously dormant account (no activity for 6+ months). Classic indicator of account takeover, credential compromise, or money laundering using shell accounts.",
+    "indicators": [
+      "Account dormant >12 months then $250k+ wire within 48 hours",
+      "Geolocation login from new jurisdiction preceded by high outbound transfer",
+      "Email/password changed immediately prior to large withdrawal",
+      "Multiple dormant accounts activated simultaneously by same initiator",
+      "Immediate transfer to newly added beneficiary"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "Fraud Detection Standards, Account Security Guidelines",
+    "case_count": 114,
+    "detection_rate": 0.94,
+    "created_at": "2025-11-10T20:53:36.324064"
+  },
+  {
+    "id": "pattern_0080",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 55,
+    "detection_rate": 0.91,
+    "created_at": "2026-03-23T20:53:36.324085"
+  },
+  {
+    "id": "pattern_0081",
+    "risk_type": "unusual_velocity",
+    "risk_name": "Unusual Transaction Velocity",
+    "description": "Sudden spike in transaction frequency or volume that deviates significantly from customer's historical baseline. Indicator of account compromise, sudden business expansion, or illicit activity.",
+    "indicators": [
+      "Account with average 2 txns/month suddenly shows 20+ txns/day",
+      "Outbound velocity increases >500% month-over-month",
+      "High-value transactions originating from previously inactive customer",
+      "Geolocation changes concurrent with velocity spike",
+      "New payee introduction with high-value transfers"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "medium",
+    "regulatory_basis": "OFAC Guidance, FinCEN SAR Filing Guidelines, ABA BSA/AML Handbook",
+    "case_count": 115,
+    "detection_rate": 0.89,
+    "created_at": "2025-08-06T20:53:36.324102"
+  },
+  {
+    "id": "pattern_0082",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 189,
+    "detection_rate": 0.68,
+    "created_at": "2026-03-09T20:53:36.324119"
+  },
+  {
+    "id": "pattern_0083",
+    "risk_type": "beneficial_owner_mismatch",
+    "risk_name": "Beneficial Owner Mismatch",
+    "description": "Transaction parties or control patterns don't align with declared beneficial ownership or corporate structure. Suggests use of intermediaries or false documentation.",
+    "indicators": [
+      "Account funded by entity A but controlled transactions to entity C",
+      "Director listed as beneficial owner but funds flow patterns show different party in control",
+      "Funds pass through company but don't align with stated business operations",
+      "Beneficial owner changes shortly before high-value transactions",
+      "Related party transactions at unfavorable rates"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "CDD/EDD Requirements, BO Identification Rules, FATF Recommendation 24",
+    "case_count": 61,
+    "detection_rate": 0.89,
+    "created_at": "2025-01-01T20:53:36.324135"
+  },
+  {
+    "id": "pattern_0084",
+    "risk_type": "dormant_account_activation",
+    "risk_name": "Dormant Account Activation",
+    "description": "Sudden high-value activity on previously dormant account (no activity for 6+ months). Classic indicator of account takeover, credential compromise, or money laundering using shell accounts.",
+    "indicators": [
+      "Account dormant >12 months then $250k+ wire within 48 hours",
+      "Geolocation login from new jurisdiction preceded by high outbound transfer",
+      "Email/password changed immediately prior to large withdrawal",
+      "Multiple dormant accounts activated simultaneously by same initiator",
+      "Immediate transfer to newly added beneficiary"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "high",
+    "regulatory_basis": "Fraud Detection Standards, Account Security Guidelines",
+    "case_count": 68,
+    "detection_rate": 0.72,
+    "created_at": "2024-06-11T20:53:36.324152"
+  },
+  {
+    "id": "pattern_0085",
+    "risk_type": "round_amounts",
+    "risk_name": "Round Amount Patterns",
+    "description": "Consistent use of exact round numbers (e.g., $10,000 flat) in transactions, suggesting deliberate avoidance of scrutiny or mathematical manipulation. Often combined with structuring.",
+    "indicators": [
+      "All transactions exactly $10,000 or multiples thereof",
+      "No variation in transaction amounts over 20+ txns",
+      "Round amounts to specific jurisdictions but varied domestically",
+      "Amounts just below reporting thresholds"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "medium",
+    "regulatory_basis": "FinCEN Structuring Guidance, CTR Filing Requirements",
+    "case_count": 94,
+    "detection_rate": 0.73,
+    "created_at": "2026-02-05T20:53:36.324170"
+  },
+  {
+    "id": "pattern_0086",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 174,
+    "detection_rate": 0.8,
+    "created_at": "2024-05-22T20:53:36.324187"
+  },
+  {
+    "id": "pattern_0087",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 17,
+    "detection_rate": 0.68,
+    "created_at": "2025-07-24T20:53:36.324203"
+  },
+  {
+    "id": "pattern_0088",
+    "risk_type": "unusual_velocity",
+    "risk_name": "Unusual Transaction Velocity",
+    "description": "Sudden spike in transaction frequency or volume that deviates significantly from customer's historical baseline. Indicator of account compromise, sudden business expansion, or illicit activity.",
+    "indicators": [
+      "Account with average 2 txns/month suddenly shows 20+ txns/day",
+      "Outbound velocity increases >500% month-over-month",
+      "High-value transactions originating from previously inactive customer",
+      "Geolocation changes concurrent with velocity spike",
+      "New payee introduction with high-value transfers"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "medium",
+    "regulatory_basis": "OFAC Guidance, FinCEN SAR Filing Guidelines, ABA BSA/AML Handbook",
+    "case_count": 77,
+    "detection_rate": 0.66,
+    "created_at": "2024-08-15T20:53:36.324221"
+  },
+  {
+    "id": "pattern_0089",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 196,
+    "detection_rate": 0.89,
+    "created_at": "2025-01-26T20:53:36.324237"
+  },
+  {
+    "id": "pattern_0090",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 108,
+    "detection_rate": 0.92,
+    "created_at": "2025-10-05T20:53:36.324253"
+  },
+  {
+    "id": "pattern_0091",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 191,
+    "detection_rate": 0.78,
+    "created_at": "2024-11-01T20:53:36.324269"
+  },
+  {
+    "id": "pattern_0092",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 103,
+    "detection_rate": 0.78,
+    "created_at": "2024-06-06T20:53:36.324287"
+  },
+  {
+    "id": "pattern_0093",
+    "risk_type": "dormant_account_activation",
+    "risk_name": "Dormant Account Activation",
+    "description": "Sudden high-value activity on previously dormant account (no activity for 6+ months). Classic indicator of account takeover, credential compromise, or money laundering using shell accounts.",
+    "indicators": [
+      "Account dormant >12 months then $250k+ wire within 48 hours",
+      "Geolocation login from new jurisdiction preceded by high outbound transfer",
+      "Email/password changed immediately prior to large withdrawal",
+      "Multiple dormant accounts activated simultaneously by same initiator",
+      "Immediate transfer to newly added beneficiary"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "Fraud Detection Standards, Account Security Guidelines",
+    "case_count": 90,
+    "detection_rate": 0.85,
+    "created_at": "2025-12-11T20:53:36.324304"
+  },
+  {
+    "id": "pattern_0094",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 89,
+    "detection_rate": 0.85,
+    "created_at": "2025-05-18T20:53:36.324321"
+  },
+  {
+    "id": "pattern_0095",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "aml_red_flag",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 151,
+    "detection_rate": 0.69,
+    "created_at": "2025-02-11T20:53:36.324340"
+  },
+  {
+    "id": "pattern_0096",
+    "risk_type": "negative_news",
+    "risk_name": "Adverse Media & Reputational Risk",
+    "description": "Customer appears in news articles, sanctions lists, PEP databases, or adverse media related to fraud, corruption, sanctions violations, or criminal activity.",
+    "indicators": [
+      "Customer name matches OFAC SDN list entry",
+      "Politically Exposed Person (PEP) status identified in media",
+      "News articles connecting customer to sanctions violations",
+      "Links to organized crime, terrorism financing, or drug trafficking",
+      "Business partner or related entity in adverse media"
+    ],
+    "historical_outcome": "sanctions_violation",
+    "severity": "critical",
+    "regulatory_basis": "OFAC List Checking, PEP Database Screening, Sanctions Regulations",
+    "case_count": 167,
+    "detection_rate": 0.82,
+    "created_at": "2025-02-26T20:53:36.324358"
+  },
+  {
+    "id": "pattern_0097",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "confirmed_fraud",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 87,
+    "detection_rate": 0.74,
+    "created_at": "2025-02-01T20:53:36.324377"
+  },
+  {
+    "id": "pattern_0098",
+    "risk_type": "dormant_account_activation",
+    "risk_name": "Dormant Account Activation",
+    "description": "Sudden high-value activity on previously dormant account (no activity for 6+ months). Classic indicator of account takeover, credential compromise, or money laundering using shell accounts.",
+    "indicators": [
+      "Account dormant >12 months then $250k+ wire within 48 hours",
+      "Geolocation login from new jurisdiction preceded by high outbound transfer",
+      "Email/password changed immediately prior to large withdrawal",
+      "Multiple dormant accounts activated simultaneously by same initiator",
+      "Immediate transfer to newly added beneficiary"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "high",
+    "regulatory_basis": "Fraud Detection Standards, Account Security Guidelines",
+    "case_count": 123,
+    "detection_rate": 0.78,
+    "created_at": "2025-09-11T20:53:36.324394"
+  },
+  {
+    "id": "pattern_0099",
+    "risk_type": "trade_based_ml",
+    "risk_name": "Trade-Based Money Laundering",
+    "description": "Use of international trade to move value and obscure illicit proceeds. Involves over/under-invoicing, phantom shipments, or inconsistent trade flows.",
+    "indicators": [
+      "Invoice amount 2-3x higher than comparable market rates",
+      "Consistent pattern of invoice mismatches (90%+ variance)",
+      "Shipments to high-risk jurisdictions with no established trade relationship",
+      "Imports of high-value luxury goods with immediate re-export at discount",
+      "Services invoiced without corresponding documentation"
+    ],
+    "historical_outcome": "escalated",
+    "severity": "high",
+    "regulatory_basis": "FATF Trade-Based ML Report, FinCEN Typology Guidance, ICC UCP 600",
+    "case_count": 198,
+    "detection_rate": 0.7,
+    "created_at": "2026-01-21T20:53:36.324411"
+  },
+  {
+    "id": "pattern_0100",
+    "risk_type": "cross_border_spike",
+    "risk_name": "Unexpected Cross-Border Activity",
+    "description": "Sudden initiation of international transfers to high-risk jurisdictions, especially when customer has no documented business or personal ties. May indicate sanctions evasion or trade-based ML.",
+    "indicators": [
+      "First wire transfer to high-risk country within 30 days of account opening",
+      "Domestic customer suddenly sends 10+ wires to FATF Grey List jurisdictions",
+      "Transfers to sanctioned country entities or sanctioned individuals",
+      "Use of informal value transfer systems (IVTS) or hawala networks",
+      "Multiple transfers to same international beneficiary within hours"
+    ],
+    "historical_outcome": "false_positive",
+    "severity": "high",
+    "regulatory_basis": "OFAC Sanctions Programs, FATF Black/Grey List, Hawala Guidance",
+    "case_count": 179,
+    "detection_rate": 0.84,
+    "created_at": "2025-05-09T20:53:36.324427"
+  }
+]

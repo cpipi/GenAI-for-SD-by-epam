@@ -1,0 +1,15 @@
+{
+  "case_id": "SAMPLE-HIGH-004",
+  "customer_id": "CUST-V3W4X5Y6",
+  "transaction_amount": 35000,
+  "transaction_type": "transfer",
+  "channel": "online",
+  "device_location": "IR",
+  "customer_profile": {
+    "account_age_days": 8,
+    "avg_monthly_volume": 0,
+    "previous_txn_count": 0,
+    "country_of_residence": "IR"
+  },
+  "description": "Dormant/newly activated account with immediate large transfer. High-risk jurisdiction. Pattern suggests account takeover or AML layering."
+}

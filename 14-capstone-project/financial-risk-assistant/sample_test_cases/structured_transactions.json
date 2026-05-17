@@ -1,0 +1,15 @@
+{
+  "case_id": "SAMPLE-HIGH-005",
+  "customer_id": "CUST-E7F8G9H0",
+  "transaction_amount": 9999,
+  "transaction_type": "transfer",
+  "channel": "online",
+  "device_location": "US",
+  "customer_profile": {
+    "account_age_days": 60,
+    "avg_monthly_volume": 3000,
+    "previous_txn_count": 8,
+    "country_of_residence": "US"
+  },
+  "description": "Multiple structured round-amount transactions pattern (structuring/smurfing). Designed to stay just below reporting thresholds."
+}

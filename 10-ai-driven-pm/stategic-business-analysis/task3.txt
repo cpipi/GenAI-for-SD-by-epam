@@ -1,0 +1,8 @@
+Stakeholder Analysis
+Context
+You have been assigned to a new project, and the project team has shared call transcriptions with you. Your goal is to familiarize yourself with the project stakeholders and their responsibilities.
+
+Task
+Download the file Customer Portal Call 2.pdf from the course page (Course AI-Assisted BA: Strategic Business Analysis -> Module 'Practice' -> Lesson 'Stakeholder Analysis').
+Create and execute a prompt to retrieve stakeholders’ full names, titles, and the responsibilities agreed upon during the call. The output should be formatted as a RACI matrix table.
+Copy the generated result to the response input. Use MD formatting for the proper results processing.

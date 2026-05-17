@@ -1,0 +1,15 @@
+{
+  "case_id": "SAMPLE-EDGE-003",
+  "customer_id": "CUST-H9I0J1K2",
+  "transaction_amount": 3500,
+  "transaction_type": "payment",
+  "channel": "teleport",
+  "device_location": "US",
+  "customer_profile": {
+    "account_age_days": 365,
+    "avg_monthly_volume": 10000,
+    "previous_txn_count": 100,
+    "country_of_residence": "US"
+  },
+  "description": "Unrecognized transaction channel ('teleport'). System should validate against allowed channels."
+}

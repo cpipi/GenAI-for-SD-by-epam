@@ -1,0 +1,9 @@
+{
+  "case_id": "SAMPLE-EDGE-001",
+  "customer_id": "CUST-Z1A2B3C4",
+  "transaction_amount": 1200,
+  "transaction_type": "payment",
+  "channel": "online",
+  "device_location": "US",
+  "description": "Transaction with minimal customer profile. System should populate defaults or handle gracefully."
+}

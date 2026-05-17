@@ -1,0 +1,15 @@
+{
+  "case_id": "SAMPLE-LOW-003",
+  "customer_id": "CUST-X5Y6Z7W8",
+  "transaction_amount": 500,
+  "transaction_type": "withdrawal",
+  "channel": "atm",
+  "device_location": "US",
+  "customer_profile": {
+    "account_age_days": 2190,
+    "avg_monthly_volume": 15000,
+    "previous_txn_count": 892,
+    "country_of_residence": "US"
+  },
+  "description": "ATM withdrawal, typical amount, very long customer relationship with consistent patterns"
+}
